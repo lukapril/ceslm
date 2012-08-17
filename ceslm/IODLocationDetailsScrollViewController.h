@@ -20,11 +20,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *locationAddressString;
 @property (weak, nonatomic) IBOutlet UILabel *locationDescription;
 @property (weak, nonatomic) IBOutlet UILabel *locationContactHeader;
-@property (weak, nonatomic) IBOutlet UILabel *locationContact;
-@property (weak, nonatomic) IBOutlet UIButton *locationWebsiteButton;
+@property (weak, nonatomic) IBOutlet UITextView *locationContactText;
 
 
 - (NSInteger) findRowNumberWithText: (NSString *)text;
-- (IBAction)goToUrl:(id)sender;
 
 @end

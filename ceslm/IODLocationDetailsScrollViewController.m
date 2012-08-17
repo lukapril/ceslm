@@ -20,8 +20,7 @@
 @synthesize locationAddressString;
 @synthesize locationDescription;
 @synthesize locationContactHeader;
-@synthesize locationContact;
-@synthesize locationWebsiteButton;
+@synthesize locationContactText;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -41,11 +40,6 @@
         }
     }
     return 0;
-}
-
-- (IBAction)goToUrl:(id)sender {
-    NSString* targetUrl = locationWebsiteButton.titleLabel.text;
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:targetUrl]];
 }
 
 - (void)viewDidLoad
@@ -121,24 +115,16 @@
     locationContactHeader.frame = labelFrame;
     [locationContactHeader sizeToFit];
     
-    locationContact.text = [locationItem valueForKey:@"contact"];
-    NSLog(@"locationContact: %@", locationContact.text);
-    locationContact.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-    locationContact.lineBreakMode = UILineBreakModeWordWrap;
-    locationContact.numberOfLines = 0;
-    labelFrame = locationContact.frame;
+    locationContactText.editable = NO;
+    locationContactText.backgroundColor = [UIColor clearColor];
+    locationContactText.text = [NSString stringWithFormat:@"%@\n\n%@", [locationItem valueForKey:@"contact"], [locationItem valueForKey:@"website"]];
+    NSLog(@"locationContact: %@", locationContactText.text);
+    locationContactText.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+    labelFrame = locationContactText.frame;
     labelFrame.size.width = 280;
-    labelFrame.origin.y = locationContactHeader.frame.size.height + locationContactHeader.frame.origin.y + 10.0f;
-    locationContact.frame = labelFrame;
-    [locationContact sizeToFit];
-    
-    [locationWebsiteButton setTitle:[locationItem valueForKey:@"website"] forState:UIControlStateNormal];
-    labelFrame = locationWebsiteButton.frame;
-    labelFrame.size.width = 280;
-    labelFrame.origin.y = locationContact.frame.origin.y + locationContact.frame.size.height + 10.0f;
-    locationWebsiteButton.frame = labelFrame;
-    [locationWebsiteButton sizeToFit];
-    
+    labelFrame.origin.y = locationContactHeader.frame.size.height + locationContactHeader.frame.origin.y + 3.0f;
+    locationContactText.frame = labelFrame;
+    [locationContactText sizeToFit];    
     
     // --- reverse-geocoding address
     //    NSLog(@"Coordinates are: %@", [[locationItem objectForKey:@"point"] valueForKey:@"coordinates"]);
@@ -199,13 +185,11 @@
 {
     [self setLocationAddressString:nil];
     [self setLocationContactHeader:nil];
-    [self setLocationContact:nil];
     [self setLocationName:nil];
     [self setLocationAddressString:nil];
     [self setLocationDescription:nil];
     [self setLocationContactHeader:nil];
-    [self setLocationContact:nil];
-    [self setLocationWebsiteButton:nil];
+    [self setLocationContactText:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
