@@ -1,0 +1,474 @@
+{
+    "placemark":[
+		{
+            "name":"Beddington Pentecostal Church - Agape Language Centre",
+            "description":"Various ESL classes throughout the week",
+            "contact":"Karen Kajorinne, Director of Agape Language Centre \nagapenw@telus.net \n(403) 516-1846",
+            "address":"16 Bermuda Dr. NW",
+            "website":"http://www.agapelanguagecentre.com",
+            "point":{
+                "coordinates":"-114.076279,51.127686,0.000000"
+            }
+        },
+		{
+            "name":"Bethany Chapel",
+            "description":"Conversation class. Wednesdays 7:00-8:30pm Sept. 28 – Nov. 30. \nChildcare is available.",
+            "contact":"Heather, heather@bethanychapel.com \n(403) 249-8605",
+            "address":"3333 Richardson Way SW",
+            "website":"www.bethanychapel.com",
+            "point":{
+                "coordinates":"-114.133744,51.015996,0.000000"
+            }
+        },
+        {
+            "name":"Bow Valley Christian Church",
+            "description":"Conversation Club, Monday 7:00-9:00pm",
+            "contact":"Pastor Alice Mitchell or Ken S. Law \nworld@bvccweb.ca \n(403) 286-5300",
+            "address":"5300 - 53 Ave. NW",
+            "website":"http://www.bvccweb.ca",
+            "point":{
+                "coordinates":"-114.162109,51.101864,0.000000"
+            }
+        },
+        {
+            "name":"Brentview Baptist Church",
+            "description":"Sunday 10am International Worship \nSunday 10:30am International Community \nSunday 11:00am ESL Bible Class \nFriday 6:30–9:30pm FOCUS group",
+            "contact":"Pastor Brad Friessen, brad@brentviewbaptist.com \n(403) 284-4691",
+            "address":"3512 Charleswood Dr. NW",
+            "website":"http://www.brentviewbaptist.com",
+            "point":{
+                "coordinates":"-114.123444,51.084316,0.000000"
+            }
+        },
+		{
+            "name":"Canyon Creek Christian Fellowship",
+            "description":"Conversation class, Tues 7:00-8:30pm",
+            "contact":"Justin Bills, justin@canyoncreek.ca",
+            "address":"333 Midpark Way SE",
+            "website":"www.canyoncreek.ca",
+            "point":{
+                "coordinates":"-114.0612415,50.906899,0.000000"
+            }
+        },
+        {
+            "name":"Central United Church (in partnership with RockPointe Church)",
+            "description":"'Let's Talk' – free conversation classes, Tuesday pm",
+            "contact":"(403) 269-3701 or info@centralchurch.ca \nor Drinda, wilso54@telus.net",
+            "website":"www.centralchurch.ca",
+            "address":"131 - 7th Ave. SW",
+            "point":{
+                "coordinates":"-114.0651334,51.0465258,0.000000"
+            }
+        },
+        {
+            "name":"Calgary Chinese Evangelical Free Church",
+            "description":"Mondays 6:00-9:00pm beginner ESL class. \nTuesdays 6:30-9:00pm advanced ESL class. \nSaturdays 9:00am-12:00pm intermediate ESL class. \nPeople of all ethnicities are very welcome.",
+            "contact":"Ralph Hertzsprung, Ccefc@telusplanet.net \n(403) 282-0288 or 246-0695 (RH)",
+            "address":"1706 - 20 Ave. NW",
+            "website":"http://www.ccefc.ca/event/esl.html",
+            "point":{
+                "coordinates":"-114.099823,51.070541,0.000000"
+            }
+        },
+        {
+            "name":"Calgary Community Church",
+            "description":"Community conversation class, supper, childcare. \nSundays 5:30–8:00pm",
+            "contact":"Serena or Pastor Ralph \n(403) 288-3760",
+            "website":"",
+            "address":"5136 – 17 Ave NW",
+            "point":{
+                "coordinates":"-114.1678812,51.0767628,0.000000"
+            }
+        },
+        {
+            "name":"Centre Street Church",
+            "description":"ESL Conversation Class \n- Wed. 7:00pm \n- West Campus, Room 107, 4120 Centre St. North \n- Contact Harry at 403.975.3162 or harryvandenberg@ymail.com \n\nFriendship Partner – matching new immigrants with a friend for coffee & visiting \n- Contact: Lois, (403)520-6502 or lois.derksen@cschurch.ca",
+            "contact":"marilyn.schellenberg@cschurch.ca \n(403) 520-1205",
+            "address":"3900 2 St NE",
+            "website":"http://www.cschurch.ca",
+            "point":{
+                "coordinates":"-114.062164,51.088913,0.000000"
+            }
+        },
+        {
+            "name":"Chinese Pentecostal Church",
+            "description":"Saturday mornings at 9:30am",
+            "contact":"calgarycpc@gmail.com \n(403) 263 6059",
+            "website":"",
+            "address":"127 - 2nd Ave. SE",
+            "point":{
+                "coordinates":"-114.062012,51.051105,0.000000"
+            }
+        },
+        {
+            "name":"Christian Life Assembly",
+            "description":"Conversation class, Wednesdays, 7:00-8:30pm, Sept. 21 – Nov. 16. \nChildcare.",
+            "contact":"Liala Stafford, office@christianlifeassembly.org \n(403) 242-0855",
+            "address":"3214 - 28 St SW",
+            "website":"",
+            "point":{
+                "coordinates":"-114.1278304,51.0260766,0.000000"
+            }
+        },
+        {
+            "name":"Covenant Church Millrise",
+            "description":"ESL Conversation Class on Thursdays 7:00-9:00pm (no charge, includes refreshments).",
+            "contact":"Curtis Korver, pastor@covenantmillrise.org \n(403) 254-2505",
+            "address":"50 Millrise Blvd SE",
+            "website":"http://www.covenantmillrise.org",
+            "point":{
+                "coordinates":"-114.074738,50.919090,0.000000"
+            }
+        },
+        {
+            "name":"Cross Pointe Lutheran ",
+            "description":"Beginners ESL, Sundays 9–10am",
+            "contact":"Pastor Jay Holdner, pastorjay@crosspointechurch.ca \n(403) 818-7345",
+            "address":"Empire theatre 10, Shawnessy South Calgary",
+            "website":"http://www.crosspointechurch.ca",
+            "point":{
+                "coordinates":"-114.062935,50.899242,0.000000"
+            }
+        },
+        {
+            "name":"Emmanuel Christian Reformed Church",
+            "description":"Thursdayam. Women only. \nChildcare available. Bible Study.",
+            "contact":"ecrc@telusplanet.net \n(403) 246-0795",
+            "website":"",
+            "address":"3020 - 51st St. SW",
+            "point":{
+                "coordinates":"-114.160736,51.029480,0.000000"
+            }
+        },
+        {
+            "name":"Expressions Community",
+            "description":"‘Conversations in ESL’ group meets every second Sunday from 2:00–3:30pm. \nMeets at McKenzie Towne Church (7 McKenzie Towne Gate SE).",
+            "contact":"Erik Freiburger, erik@expressionscommunity.org",
+            "address":"7 McKenzie Towne Gate SE",
+            "website":"http://expressionscommunity.org",
+            "point":{
+                "coordinates":"-113.962364,50.915398,0.000000"
+            }
+        },
+        {
+            "name":"First Alliance Church",
+            "description":"Alpha ESOL program runs every Thursday at 6:30pm.",
+        	"contact":"info@faccalgary.com \n(403) 252-7572",
+        	"address":"12345 - 40 St. SE",
+            "website":"http://www.faccalgary.com",
+            "point":{
+                "coordinates":"-113.973495,50.939053,0.000000"
+            }
+        },
+        {
+            "name":"First Baptist Church",
+            "description":"First Baptist Church offers ESL classes throughout the week \nFree Conversation Class - Wednesdays from 6:30-8:00pm, and Thursdays from 7:00-9:00pm.",
+            "contact":"Nada Ramsden, cilc@firstbaptistcalgary.net \n(403) 263-5911",
+            "website":"http://www.firstbaptistcalgary.com",
+            "address":"1311 - 4th St. SW",
+            "point":{
+                "coordinates":"-114.071793,51.040531,0.000000"
+            }
+        },
+        {
+            "name":"Falconridge Full Gospel Tabernacle",
+            "description":"Conversation Class",
+            "contact":"Pastor Scott Hill, scott@fullgospeltabernacle.org \n(403) 285-3300",
+            "address":"155 Falconridge Cres NE",
+            "website":"http://www.fullgospeltabernacle.org",
+            "point":{
+                "coordinates":"-113.951355,51.096394,0.000000"
+            }
+        },
+        {
+            "name":"Foothills Alliance Church",
+            "description":"Offers several ESL classes throughout the week and Bible studies.\n- Sunday 9:30am JobTalk \n- Sunday 10:45am Language, culture & faith \n- Thursday 9:15am Women only. Friends in English \n- Friday 11:00am Conversation class \n- Friday 7:00pm Bible Study \n- Saturday 5:00pm Beginner ESL \n- Saturday 5:00pm Intermediate ESL",
+            "contact":"Patti Love, patricia@foothillsalliance.com \n(403) 241-9777",
+            "address":"333 Edgepark Blvd. NW",
+            "website":"www.foothillsalliance.com/What_we_do/esl.asp",
+            "point":{
+                "coordinates":"-114.157501,51.136936,0.000000"
+            }
+        },
+        {
+            "name":"Forest Lawn Mission Community Church",
+            "description":"Conversation Class, Spanish class for children \nWednesdays, 5:30-6:30pm",
+            "contact":"Edith Dean, Edith_Dean@salvation army",
+            "address":"3720 – 19 Ave NE",
+            "website":"",
+            "point":{
+                "coordinates":"-113.9802611,51.0362946,0.000000"
+            }
+        },
+        {
+            "name":"Grace Presbyterian Church",
+            "description":"Mon, Wed, Fri from 9:00am to 12:00pm. \nSix weeks for $30.",
+            "contact":"Pastor Victor Kim, office@gracecalgary.org \n(403) 244-5861",
+            "address":"1009 - 15th Ave. SW",
+            "website":"http://gracecalgary.org",
+            "point":{
+                "coordinates":"-114.084480,51.038994,0.000000"
+            }
+        },
+        {
+            "name":"Glenmore Temple",
+            "description":"Alpha for ESOL Sundays \nESL Conversation Mondays 7:00-8:30pm.",
+            "contact":"Margaret & Rick Blackburn, office@glenmoretemple.com \n(403) 253-1700",
+            "address":"921 - 68 Ave. SW",
+            "website":"http://alt.glenmoretemple.com/",
+            "point":{
+                "coordinates":"-114.0830134,50.9923584,0.000000"
+            }
+        },
+        {
+            "name":"Harvest Hills Alliance Church",
+            "description":"ESL classes: \n- Tues 7:00-9:00pm intermediate, \n- Wed 9:15-11:15am Bible study, \n- Thurs 7:00-9:00pm intermediate, \n- Sun 10:45am - 12:15pm \n\n(all classes 8 weeks long, $25)",
+            "contact":"Donna Zamiski, office@harvesthillsalliance.com \n(403) 226-0990",
+            "address":"10099 Harvest Hills Blvd. NW",
+            "website":"http://www.harvesthillsalliance.com",
+            "point":{
+                "coordinates":"-114.063858,51.146740,0.000000"
+            }
+        },
+        {
+            "name":"Hawkwood Baptist Fellowship",
+            "description":"Conversation: \n- Tues. 7:00–9:00pm \n- Thurs. 9:30–11:30am\nSermon preview Sun. 9:30am",
+            "contact":"Steve Dole, hbf@hawkwood.ca \n(403) 239-6200 (church) or doles@shaw.ca",
+            "address":"20 Hawkwood Dr. NW",
+            "website":"http://www.hawkwood.ca",
+            "point":{
+                "coordinates":"-114.187691,51.126072,0.000000"
+            }
+        },
+        {
+            "name":"Highland Mennonite Brethren Church",
+            "description":"Sunday mornings 9:30am. ESL Bible Study.",
+            "contact":"Elfreda Dick, deed559@shaw.ca \n(403) 243-5958",
+            "address":"4018 Centre B St. NW",
+            "website":"http://www.highlandchurch.ca",
+            "point":{
+                "coordinates":"-114.063515,51.088039,0.000000"
+            }
+        },
+        {
+            "name":"International Student Ministries Calgary",
+            "description":"ESL class Fridays 3:30-4:30pm, followed by a Bible study 4:30-5:30pm (meets at University of Calgary in the MacEwan Student Center). \n\nFOCUS on Fridays 6:30-9:30pm (at Brentview Baptist Church.)",
+            "contact":"Gisela Rohde, serious@telus.net \n(403) 282-7519",
+            "address":"University of Calgary, MacEwan Student Center, Rm 279",
+            "website":"",
+            "point":{
+                "coordinates":"-114.133873,51.078777,0.000000"
+            }
+        },
+        {
+            "name":"King's Court",
+            "description":"Thursday, 8:15–9:15pm for adults \n- $100 to register, returned on completion of course.",
+            "contact":"Janice Otchere, janiceotchere@gmail.com \n(403) 668-9400",
+            "address":"508 -3rd Ave SE, Airdrie",
+            "website":"http://www.rccgairdrie.org",
+            "point":{
+                "coordinates":"-114.003326,51.288494,0.000000"
+            }
+        },
+        {
+            "name":"Lakeview Baptist Church",
+            "description":"English conversation classes, Thursdays 7:00-8:30pm. \nSept. 15 – Dec. 15.",
+            "contact":"Rick Gordon, rick@lakeviewbc.ca \n(403) 249-7359",
+            "address":"5336 Lakeview Drive SW",
+            "website":"www.lakeviewbc.ca",
+            "point":{
+                "coordinates":"-114.137435,51.006761,0.000000"
+            }
+        },
+        {
+            "name":"Lighthouse Church",
+            "description":"ESL classes on Tuesdays from 7:00-9:00pm. \nGrammar, pronunciation, Canadian culture and idioms.",
+            "contact":"esl@calgarylighthouse.com",
+            "address":"Lighthouse Learning Centre, 9827E Horton Rd. SW",
+            "website":"http://www.calgarylighthouse.com",
+            "point":{
+                "coordinates":"-114.076324,50.965778,0.000000"
+            }
+        },
+        {
+            "name":"METRO Church",
+            "description":"Free Conversational English Classes for Beginners \nTuesdays 7:00-9:00pm",
+            "contact":"Donna Judd, metrochurch@telus.net \n(403) 273-5433",
+            "address":"3763 52nd Street SE",
+            "website":"http://www.metrochurchcalgary.org",
+            "point":{
+                "coordinates":"-113.959061,51.020924,0.000000"
+            }
+        },
+        {
+            "name":"Richmond Hill Baptist Church",
+            "description":"ESL coffee and conversation club. \nThursdays 9:30–11:00am. \nStarting Oct. 6",
+            "contact":"Marisa Spannagel, spannagel@shaw.ca \n(403) 242-1256",
+            "address":"7251 Sierra Morena Blvd SW",
+            "website":"http://www.richmondhillbaptist.com",
+            "point":{
+                "coordinates":"-114.175697,51.013676,0.000000"
+            }
+        },
+        {
+            "name":"River Park Church",
+            "description":"Tues. 9-11am. Women only. \nESL Bible Study and Conversation",
+            "contact":"info@riverparkchurch.com \n(403) 243-2244",
+            "address":"3818 - 14 A St. SW",
+            "website":"http://www.riverparkchurch.com",
+            "point":{
+                "coordinates":"-114.094452,51.021072,0.000000"
+            }
+        },
+        {
+            "name":"Rockpointe Church (Westhills Site)",
+            "description":"Conversation Club, Wednesday evenings 7:00pm",
+            "contact":"Mary Friesen, (403) 851-0011",
+            "address":"Springborough Professional Centre, 3rd Floor, 30 Springbank Blvd. SW",
+            "website":"www.RockPointe.ca",
+            "point":{
+                "coordinates":"-114.2048134,51.0203216,0.000000"
+            }
+        },
+        {
+            "name":"Royal Oak Victory Church",
+            "description":"Class temporarily suspended",
+            "contact":"Lydia Elankairajah, yasotharajah@yahoo.ca \n(403) 286-4477",
+            "address":"450 Royal Oak Dr. NW",
+            "website":"http://www.rovc.ca",
+            "point":{
+                "coordinates":"-114.228073,51.148811,0.000000"
+            }
+        },
+        {
+            "name":"Salvation Army – Village Site",
+            "description":"Global Café, ESL conversation, Mondays",
+            "contact":"Margaret Blackburn \nmargaret.blackburn@salvationarmycalgary.org",
+            "address":"1731 – 29 St SW",
+            "website":"",
+            "point":{
+                "coordinates":"-114.1295707,51.0390914,0.000000"
+            }
+        },
+        {
+            "name":"St. James Anglican Church",
+            "description":"Conversation on Monday evenings, 7–9:00pm \nESL on Wednesday evenings.",
+            "contact":"Marilyn Millions \n(403) 288-1330",
+            "address":"6351 Ranchview Dr. NW",
+            "website":"http://stjamescalgary.com",
+            "point":{
+                "coordinates":"-114.181084,51.115067,0.000000"
+            }
+        },
+        {
+            "name":"St. Luke's Catholic Church",
+            "description":"ESL Conversation class Monday mornings 9:30–11:30am R etired teachers.",
+            "contact":"Margaret Heinen, Margaret.Dewald@stlukeschurch.ca \n(403)282-9488",
+            "address":"1566 Northmount Dr. NW",
+            "website":"http://www.stlukeschurch.ca",
+            "point":{
+                "coordinates":"-114.140182,51.096123,0.000000"
+            }
+        },
+        {
+            "name":"St. Michael Catholic Community",
+            "description":"class temporarily suspended",
+            "contact":"parish@sntmichael.com \n(403) 249-0423",
+            "address":"4716 Worcester Dr. SW",
+            "website":"http://www.sntmichael.com",
+            "point":{
+                "coordinates":"-114.155548,51.049850,0.000000"
+            }
+        },
+        {
+            "name":"South Calgary Community Church",
+            "description":"Suspended - No classes currently running",
+            "contact":"Luisa Cisterna, Luisa@southcalgary.org \n(403) 281-6755",
+            "address":"2900 Cedarbrae Drive SW",
+            "website":"http://www.southcalgary.org",
+            "point":{
+                "coordinates":"-114.129257,50.957455,0.000000"
+            }
+        },
+        {
+            "name":"South Calgary Chinese Evangelical Free Church",
+            "description":"ESL for women only, Monday mornings.",
+            "contact":"info@sccefc.ca \n(403) 243-2770",
+            "address":"340 - 39 Avenue S.E.",
+            "website":"http://www.sccefc.ca",
+            "point":{
+                "coordinates":"-114.059975,51.018127,0.000000"
+            }
+        },
+        {
+            "name":"South Gate Alliance Church",
+            "description":"Offer ESL Conversation, Wed. 7–8:30pm",
+            "contact":"Pastor Ken Shoemaker, Ken_shoe@telus.net \n(403) 254-1030",
+            "address":"14910 Bannister Rd. SE",
+            "website":"",
+            "point":{
+                "coordinates":"-114.068146,50.918957,0.000000"
+            }
+        },
+        {
+            "name":"Southwood United Church",
+            "description":"Free conversational ESL classes. \nMondays, 7–8:30pm",
+            "contact":"esl@southwoodchurch.ca \n(403) 253-2979",
+            "address":"10690 Elbow Drive SW",
+            "website":"http://southwoodchurch.ca",
+            "point":{
+                "coordinates":"-114.084328,50.957130,0.000000"
+            }
+        },
+        {
+            "name":"Truth Baptist Church",
+            "description":"Meet after lunch (together) Sunday 1:30-3:00pm, Mandarin church. In Alberta Bible College.",
+            "contact":"Susan Jones, jonessusan@shaw.ca \n(403) 288- 3422",
+            "address":"635 Northmount Dr. NW, in ABC building.",
+            "website":"",
+            "point":{
+                "coordinates":"-114.088921,51.085773,0.000000"
+            }
+        },
+        {
+            "name":"Valleyview Presbyterian Church",
+            "description":"Women's conversation group \nThursdays, 1:00–2:30pm",
+            "contact":"Leslie, lfoloughlin@shaw.ca \n(403) 554-8730",
+            "address":"7655 - 26th Avenue SW",
+            "website":"http://www.valleyviewpc.net",
+            "point":{
+                "coordinates":"-114.198502,51.030193,0.000000"
+            }
+        },
+        {
+            "name":"Varsity Acres Presbyterian Church",
+            "description":"ESL Saturday mornings 10:00am to 12:00pm.",
+            "contact":"Joan Stellmach, joankemp@telus.net \n(403) 288-7754",
+            "address":"4612 Varsity Dr. NW",
+            "website":"http://www.vapc.ca",
+            "point":{
+                "coordinates":"-114.152115,51.093010,0.000000"
+            }
+        },
+        {
+            "name":"Westview Baptist Church",
+            "description":"ESL conversation group Monday evenings 7–8:30pm",
+            "contact":"Michele Wiens, info@westviewbaptistchurch.ca \n(403) 239-1114",
+            "address":"1313 Ranchlands Way NW",
+            "website":"http://www.westviewbaptistchurch.ca",
+            "point":{
+                "coordinates":"-114.195137,51.119457,0.000000"
+            }
+        },
+        {
+            "name":"Woodgreen Presbyterian Church",
+            "description":"Conversation Tues. and Thurs. 9:30–11:30am \n(paid pre-school option available)",
+            "contact":"Jean Patterson \n(403) 251-4855",
+            "address":"12777 Candle Cr SW",
+            "website":"",
+            "point":{
+                "coordinates":"-114.0853184,50.9385898,0.000000"
+            }
+        }
+        ]
+}

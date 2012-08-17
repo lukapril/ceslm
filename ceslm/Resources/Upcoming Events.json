@@ -1,0 +1,28 @@
+{
+	"Upcoming Events":[
+                       {
+                       "name":"Fall 2012 ESL Training for Church Volunteers",
+                       "description":"This intensive 30-hour training course extends over a one-month period (three weekends in total). Participants who finish the training and observe two ESL classes will receive a CESLM Training Certificate.\nDuring the training program, trainees will have an opportunity to observe demonstrations of conversation-style lessons, and will be matched up with volunteer ESL students to practice their ESL facilitation skills.",
+                       "event date":["2012-09-28 18:00", "2012-09-29 08:30", "2012-10-12 18:00", "2012-10-13 08:30", "2012-10-26 18:00", "2012-10-27 08:30"],
+                       "event location":["Calgary Lighthouse Church ","Calgary Lighthouse Church ","Agape Learning Centre","Agape Learning Centre","Centre for Newcomers","Centre for Newcomers"],
+                       "event duration":["10800", "28800", "10800", "28800", "10800", "28800"],
+                       "contact":"Training cost is $220.00 per person. Early bird registration (payment received prior to September 14th) is $200.00 per person. Space is limited to 25 trainees. Visit our website for more details."	
+                       },
+                       {
+                       "name":"ESL Cooperative's AGM",
+                       "description":"You are invited to our Annual General Meeting.",
+                       "event date":["2012-09-18 20:00"],
+                       "event duration" : ["3600"],
+                       "event location":["TBD"],
+                       "contact":"For more information or to RSVP, please contact bev@eslcooperative.ca"	
+                       },
+                       {
+                       "name":"February 2013 Networking Event",
+                       "description":"We bring together a wide variety of immigrant serving agencies and churches to bring you this insprining and encouraging event.",
+                       "event date":["TBD"],
+                       "event duration" : ["14400"],
+                       "event location":["TBD"],
+                       "contact":"Sign up for our newsletter to receive details about this inspiring one-day event."	
+                       }	
+                       ]    
+}

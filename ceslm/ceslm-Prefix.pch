@@ -1,0 +1,31 @@
+//
+// Prefix header for all source files of the 'ceslm' target in the 'ceslm' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import "NSString+Additions.h"
+
+#define CONTACT_ADDRESS     @"Cooperative ESL Ministries\nc/o 84 Edgeland Road NW\nCalgary  Alberta T3A 2Y4\nCanada"
+#define FEEDBACK_EMAIL      @"questions@eslcooperative.ca"
+#define REGISTRATION_EMAIL  @"register@eslcooperative.ca"
+#define SUBSCRIPTION_EMAIL  @"questions@eslcooperative.ca"
+#define WEBSITE_URL         @"http://www.eslcooperative.ca"
+#define FB_URL              @"http://www.facebook.com/pages/Cooperative-ESL-Ministries/104013819219"
+
+#define ABOUT_US_URL        @"http://mobile.eslcooperative.ca/AboutUs.html"
+#define EVENT_TYPES_JSON    @"http://mobile.eslcooperative.ca/EventTypes.json" 
+#define EVENT_BASE_URL      @"http://mobile.eslcooperative.ca/"
+#define CHURCH_ESL_CALGARY_KML      @"http://mobile.eslcooperative.ca/ChurchESLCalgary.kml"
+#define CHURCH_DETAILS_JSON         @"http://mobile.eslcooperative.ca/ChurchDetails.json"
+
+

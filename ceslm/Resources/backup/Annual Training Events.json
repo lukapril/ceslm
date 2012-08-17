@@ -1,0 +1,24 @@
+{
+	"Annual Training Events":[
+		{
+			"name":"Networking Event",
+			"description":"This event takes place in the early Spring and is for all either currently or potentially involved in a church-based ESL program. An inspiring keynote speaker, together with sharing from the various programs, plus tables of community resources available, always makes this a great time!",
+            "contact":"Visit the Upcoming Events section or sign up for our newsletter to receive details about this event."	
+		},
+		{
+			"name":"Spring Training",
+			"description":"This professional development training conference occurs over one weekend in the late Spring. In addition to the Plenary Speakers, we offer two tracks: \n\n- one specifically on ESL skills, \n- and one on the wider issues of acculturation, family, workplace preparation, and\/or community resources (for referrals). \n\nWe often like to have successful immigrants address us to hear their stories of what they found helpful and what was not. Great fellowship and sharing resources rounds out a rich experience.",
+            "contact":"Visit the Upcoming Events section or sign up for our newsletter to receive details about this event."
+		},
+		{
+			"name":"Fall 30 Hour Training Program",
+			"description":"Our intensive 30-Hour Training Program that extends over a one-month period (three weekends in total) each fall. A maximum of 35 trainees can attend the Training Program. Each trainee receives a comprehensive training manual, a Clearly Speaking text, the Canadian Language Benchmarks manual, and a CD with numerous resources for your church-based ESL program. Participants who finish the training and observe two ESL classes will receive a CESLM Training Certificate.\n\nDuring the Training Program trainees will have an opportunity to observe demonstrations of conversation-style lessons, and will be matched up with volunteer ESL students to practice their ESL facilitation skills. By the end of the Training Program you will be inspired and prepared to start your own church-based ESL program!",
+            "contact":"Visit the Upcoming Events section or sign up for our newsletter to receive details about this event."
+		},
+		{
+			"name":"Other Training Opportunities",
+			"description":"Training events sponsored by ATESL (www.atesl.ca) and VESL (www.vesl.ca) are included in CESLM's monthly newsletter.",
+            "contact":"Visit the Upcoming Events section or sign up for our newsletter to receive details about this event."
+		}	
+	]  
+}
