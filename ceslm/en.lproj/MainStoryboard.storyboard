@@ -566,8 +566,8 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="YFj-0j-CAb">
-                                            <rect key="frame" x="15" y="116" width="290" height="130"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="YFj-0j-CAb">
+                                            <rect key="frame" x="15" y="112" width="290" height="130"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
@@ -579,7 +579,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="eventContactHeader" destination="eB3-ug-epg" id="sTB-WY-fUi"/>
-                                    <outlet property="eventContactText" destination="YFj-0j-CAb" id="jjt-zG-bLw"/>
+                                    <outlet property="eventContactText" destination="YFj-0j-CAb" id="kz8-ob-MY7"/>
                                     <outlet property="eventDescription" destination="zda-lS-SWa" id="BYr-eA-SdH"/>
                                     <outlet property="eventName" destination="eZa-7b-NPQ" id="aGM-i6-u3a"/>
                                 </connections>
@@ -659,13 +659,6 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Contact" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Uen-Po-Noi">
-                                            <rect key="frame" x="20" y="219" width="280" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="For More Information ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Gun-qN-HmM">
                                             <rect key="frame" x="20" y="199" width="280" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -673,12 +666,20 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="PjU-0e-xM7">
+                                            <rect key="frame" x="15" y="218" width="290" height="150"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                        </textView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <outlet property="eventContact" destination="Uen-Po-Noi" id="gJh-ov-MdR"/>
                                     <outlet property="eventContactHeader" destination="Gun-qN-HmM" id="dmc-W3-AF4"/>
+                                    <outlet property="eventContactText" destination="PjU-0e-xM7" id="VaZ-65-ChS"/>
                                     <outlet property="eventDate" destination="ca0-W5-IYt" id="Yur-BS-whR"/>
                                     <outlet property="eventDescription" destination="zgZ-ss-gwh" id="xh2-Hp-OlC"/>
                                     <outlet property="eventName" destination="Zat-Uo-C8g" id="0aH-7f-tfv"/>
@@ -851,7 +852,7 @@
                                         <rect key="frame" x="15" y="202" width="290" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                     </textView>
@@ -949,7 +950,6 @@
         <class className="EventDetailTableCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EventDetailTableCell.h"/>
             <relationships>
-                <relationship kind="outlet" name="eventContact" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="eventContactHeader" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="eventContactText" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="eventDate" candidateClass="UILabel"/>
@@ -1006,6 +1006,12 @@
                 <relationship kind="outlet" name="locationContactText" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="locationDescription" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="locationName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IODLocationTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODLocationTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="locationTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="IODMapViewController" superclassName="UIViewController">

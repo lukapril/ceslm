@@ -200,15 +200,25 @@
     cell.eventContactHeader.frame = labelFrame;
     [cell.eventContactHeader sizeToFit];
 
-    cell.eventContact.text = [eventItem valueForKey:@"contact"];
-    cell.eventContact.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
-    cell.eventContact.lineBreakMode = UILineBreakModeWordWrap;
-    cell.eventContact.numberOfLines = 0;
-    labelFrame = cell.eventContact.frame;
-    labelFrame.size.width = 280;
-    labelFrame.origin.y = cell.eventContactHeader.frame.size.height + cell.eventContactHeader.frame.origin.y + 10.0f;
-    cell.eventContact.frame = labelFrame;
-    [cell.eventContact sizeToFit];
+    cell.eventContactText.editable = NO;
+    cell.eventContactText.backgroundColor = [UIColor clearColor];
+    cell.eventContactText.text = [eventItem valueForKey:@"contact"];
+    cell.eventContactText.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+    labelFrame = cell.eventContactText.frame;
+    labelFrame.size.width = 290;
+    labelFrame.origin.y = cell.eventContactHeader.frame.size.height + cell.eventContactHeader.frame.origin.y + 3.0f;
+    cell.eventContactText.frame = labelFrame;
+    [cell.eventContactText sizeToFit];
+
+//    cell.eventContact.text = [eventItem valueForKey:@"contact"];
+//    cell.eventContact.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+//    cell.eventContact.lineBreakMode = UILineBreakModeWordWrap;
+//    cell.eventContact.numberOfLines = 0;
+//    labelFrame = cell.eventContact.frame;
+//    labelFrame.size.width = 280;
+//    labelFrame.origin.y = cell.eventContactHeader.frame.size.height + cell.eventContactHeader.frame.origin.y + 10.0f;
+//    cell.eventContact.frame = labelFrame;
+//    [cell.eventContact sizeToFit];
     
     cell.backgroundColor = [UIColor clearColor];
     [tableView setSeparatorColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"stitching"]]];
