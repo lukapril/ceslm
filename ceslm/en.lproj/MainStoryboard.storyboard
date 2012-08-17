@@ -566,8 +566,8 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="YFj-0j-CAb">
-                                            <rect key="frame" x="15" y="112" width="290" height="130"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="YFj-0j-CAb">
+                                            <rect key="frame" x="15" y="112" width="290" height="150"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
@@ -582,7 +582,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="eventContactHeader" destination="eB3-ug-epg" id="sTB-WY-fUi"/>
-                                    <outlet property="eventContactText" destination="YFj-0j-CAb" id="kz8-ob-MY7"/>
+                                    <outlet property="eventContactText" destination="YFj-0j-CAb" id="3JO-o5-yj4"/>
                                     <outlet property="eventDescription" destination="zda-lS-SWa" id="BYr-eA-SdH"/>
                                     <outlet property="eventName" destination="eZa-7b-NPQ" id="aGM-i6-u3a"/>
                                 </connections>
@@ -949,113 +949,6 @@
         <image name="tab_info.png" width="30" height="30"/>
         <image name="tab_map.png" width="26" height="21"/>
     </resources>
-    <classes>
-        <class className="EventDetailTableCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventDetailTableCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="eventContactHeader" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eventContactText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="eventDate" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eventDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eventLocation" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eventName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="registerEventButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="setEventReminderButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="IODContactViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODContactViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="emailFeedback:"/>
-                <relationship kind="action" name="goToFbUrl:"/>
-                <relationship kind="action" name="goToUrl:"/>
-                <relationship kind="action" name="registerNewsLetter:"/>
-                <relationship kind="outlet" name="contactLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="emailButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fbButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="newsLetterButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="urlButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="IODEventReminderTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODEventReminderTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancelSetReminder:"/>
-                <relationship kind="action" name="doneSetReminder:"/>
-                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="IODEventTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODEventTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="eventTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="IODEventTypeTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODEventTypeTableViewController.h"/>
-        </class>
-        <class className="IODHomeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODHomeViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="IODLocationDetailsScrollViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODLocationDetailsScrollViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="locationAddressString" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationContactHeader" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationContactText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="locationDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationName" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="IODMapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODMapViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="IODNewsletterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODNewsletterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="sendSubscription:"/>
-                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="subscribeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="userTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="IODRegisterEventViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODRegisterEventViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="sendRegistration:"/>
-                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="registerButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="registerEventName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="userTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="IODUpcomingEventTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODUpcomingEventTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="registerEvent:"/>
-                <relationship kind="action" name="setEventReminder:"/>
-            </relationships>
-        </class>
-        <class className="LocationTableCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LocationTableCell.h"/>
-            <relationships>
-                <relationship kind="action" name="goToUrl:"/>
-                <relationship kind="outlet" name="locationAddress" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationWebsiteButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
