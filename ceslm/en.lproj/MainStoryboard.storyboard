@@ -270,7 +270,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Eed-92-w1p">
-                                <rect key="frame" x="85" y="138" width="220" height="37"/>
+                                <rect key="frame" x="80" y="138" width="230" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal">
@@ -285,7 +285,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qiM-4k-LTu">
-                                <rect key="frame" x="85" y="30" width="220" height="80"/>
+                                <rect key="frame" x="80" y="30" width="230" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -308,7 +308,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kmv-YA-TL7">
-                                <rect key="frame" x="85" y="193" width="220" height="37"/>
+                                <rect key="frame" x="80" y="193" width="230" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal">
@@ -323,7 +323,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IzR-hT-cQH">
-                                <rect key="frame" x="85" y="248" width="220" height="37"/>
+                                <rect key="frame" x="80" y="248" width="230" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal">
@@ -342,7 +342,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="0vo-Vb-2lq">
-                                <rect key="frame" x="85" y="303" width="220" height="37"/>
+                                <rect key="frame" x="80" y="303" width="230" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal">
@@ -1006,12 +1006,6 @@
                 <relationship kind="outlet" name="locationContactText" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="locationDescription" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="locationName" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="IODLocationTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODLocationTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="locationTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="IODMapViewController" superclassName="UIViewController">

@@ -29,16 +29,19 @@
     label.text = @"Calgary Church ESL Programs";
     self.navigationItem.titleView = label;
 
-    // Locate the path to the route.kml file in the application's bundle
-    // and parse it with the KMLParser.
+    // Locate the path to the route.kml file in the application's bundle and parse it with the KMLParser.
+    NSURL *url;
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"ChurchESLCalgary" ofType:@"kml"];
-    NSURL *url = [NSURL fileURLWithPath:path];
-        
-//    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-//    NSString *path = [NSString stringWithFormat:@"%@/%@", documentsDirectory, @"ChurchESLCalgary.kml"];
-//    NSURL *url = [NSURL fileURLWithPath:path];
-
+    if (ENV == @"PROD") {
+        NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSString *path = [NSString stringWithFormat:@"%@/%@", documentsDirectory, @"ChurchESLCalgary.kml"];
+        url = [NSURL fileURLWithPath:path];
+    }
+    else {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ChurchESLCalgary" ofType:@"kml"];
+        url = [NSURL fileURLWithPath:path];
+    }
+ 
     kmlParser = [[KMLParser alloc] initWithURL:url];
     [kmlParser parseKML];
     

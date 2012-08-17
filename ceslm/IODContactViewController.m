@@ -44,16 +44,16 @@
     contactLabel.lineBreakMode = UILineBreakModeWordWrap;
     contactLabel.numberOfLines = 0;
     contactLabel.text = CONTACT_ADDRESS;
-    contactLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:16];
+    contactLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
         
     [emailButton setTitle:FEEDBACK_EMAIL forState:UIControlStateNormal];
-    emailButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:16];
+    emailButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
     [urlButton setTitle:WEBSITE_URL forState:UIControlStateNormal];
-    urlButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:16];
+    urlButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
     [fbButton setTitle:@"CESLM@Facebook" forState:UIControlStateNormal];
-    fbButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:16];
+    fbButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
     [newsLetterButton setTitle:@"Sign-up for monthly newsletter" forState:UIControlStateNormal];
-    newsLetterButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:16];
+    newsLetterButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
 
 }
 

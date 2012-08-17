@@ -33,18 +33,21 @@
 }
 
 - (void) buildEventList:(NSString *)targetEventType{
-        
-    NSString *targetEventUrlString = [[NSString stringWithFormat:@"%@%@.json", EVENT_BASE_URL, targetEventType] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-
     dispatch_async(backgroundQueue, ^(void) {
         [SVProgressHUD show];
         
         NSError *jsonError;
-        NSString *jsonFile = [[NSBundle mainBundle] pathForResource:targetEventType ofType:@"json"];
-        NSData *jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
+        NSData *jsonData;
+        
+        if (ENV == @"PROD") {
+            NSString *targetEventUrlString = [[NSString stringWithFormat:@"%@%@.json", EVENT_BASE_URL, targetEventType] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:targetEventUrlString]];
 
-//        NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:targetEventUrlString]];
-//        NSError *jsonError;
+        }
+        else {
+            NSString *jsonFile = [[NSBundle mainBundle] pathForResource:targetEventType ofType:@"json"];
+            jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
+        }
         
         // Convert to dictionary or array here
         if (jsonData != nil) {

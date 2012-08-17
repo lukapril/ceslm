@@ -39,17 +39,23 @@
 }
 
 - (void) buildEventList:(NSString *)targetEventType{        
-    NSString *targetEventUrlString = [[NSString stringWithFormat:@"%@%@.json", EVENT_BASE_URL, targetEventType] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
     
     dispatch_async(backgroundQueue, ^(void) {
        [SVProgressHUD show];
         
         NSError *jsonError;
-        NSString *jsonFile = [[NSBundle mainBundle] pathForResource:targetEventType ofType:@"json"];
-        NSData *jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
+        NSData *jsonData;
+        
+        if (ENV == @"PROD") {
+            NSString *targetEventUrlString = [[NSString stringWithFormat:@"%@%@.json", EVENT_BASE_URL, targetEventType] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:targetEventUrlString]];
+        }
+        else {
+            NSString *jsonFile = [[NSBundle mainBundle] pathForResource:targetEventType ofType:@"json"];
+            jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
 
-//        NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:targetEventUrlString]];
-//        NSError *jsonError;
+        }
         
         // Convert to dictionary or array here
         if (jsonData != nil) {
@@ -67,6 +73,7 @@
             // Pass that array to the UI, set a local property, then update your UI here since its on the main thread
             [self.tableView reloadData];
             [SVProgressHUD dismiss];
+            
 //            [spinner stopAnimating];
         });
     });
@@ -105,7 +112,8 @@
 //    [self.view addSubview:spinner];
 //    [spinner startAnimating];
     
-    [self buildEventList:selectedEventType];    
+    [self buildEventList:selectedEventType];
+    
 //    [self.tableView reloadData];
 }
 
@@ -309,16 +317,54 @@
         [self performSegueWithIdentifier:@"registerEvent" sender:self];
     }
     else if ([[eventItem objectForKey:@"event date"] count] == 1) {
+        NSString *eventDateString = [[eventItem objectForKey:@"event date"] objectAtIndex:0];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+        NSDate *eventDate = [dateFormatter dateFromString:eventDateString];
+        NSDate* currentDate = [NSDate date];
+        
+        // Use the user's current calendar and time zone
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+        [calendar setTimeZone:timeZone];
+        
+        // Selectively convert the date components (year, month, day) of the input date
+        NSDateComponents *dateComps = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:eventDate];
+        
+        // Set the time components manually
+        [dateComps setHour:0];
+        [dateComps setMinute:0];
+        [dateComps setSecond:0];
+        
+        // Convert back
+        NSDate *eventDateForComp = [calendar dateFromComponents:dateComps];
+        
+        NSComparisonResult result = [eventDateForComp compare:currentDate];
+                
         // case for event has 1 date but TBD, show alert
         if ([[[eventItem objectForKey:@"event date"] objectAtIndex:0] contains:@"TBD"]) {
             UIAlertView *alert = [UIAlertView alloc];
             alert = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"We do no accept registeration just yet. Please come back and check for updates later." delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil];
             [alert show];
-        } 
+        }
+        // case for event in the past or same day as event, show alert
+        else if (result <= 0) {
+            UIAlertView *alert = [UIAlertView alloc];
+            alert = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"Thank you for your interested, but we have closed registeration for this event." delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil];
+            [alert show];
+        }            
         // case for event has 1 known date, direct user to set reminder
         else {
-            targetEventName = [eventItem valueForKey:@"name"];
-            [self performSegueWithIdentifier:@"registerEvent" sender:self];
+            // case for event in the past or same day as event, show alert
+            if (result <= 0) {
+                UIAlertView *alert = [UIAlertView alloc];
+                alert = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"Thank you for your interested, but we have closed registeration for this event." delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil];
+                [alert show];
+            }
+            else {
+                targetEventName = [eventItem valueForKey:@"name"];
+                [self performSegueWithIdentifier:@"registerEvent" sender:self];
+            }
         }
     }
     // case for event no date specified yet, show alert

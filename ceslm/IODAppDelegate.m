@@ -28,7 +28,7 @@
     [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
     
     [self updateData];
-    
+        
     return YES;
 }
 
@@ -37,70 +37,69 @@
     //applications Documents dirctory path
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    
     NSError *jsonError;
     
-    // Attempt to download data - EventTypes.json
-    NSData *eventTypejsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:EVENT_TYPES_JSON]];
-    if (eventTypejsonData) {
-        NSLog(@"DEBUG: loading EventTypes.json from server...");
-        NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"EventTypes.json"];
-        [eventTypejsonData writeToFile:filePath atomically:YES];
+    if (ENV == @"PROD") {
+        // Attempt to download data - EventTypes.json
+        NSData *eventTypejsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:EVENT_TYPES_JSON]];
+        if (eventTypejsonData) {
+            NSLog(@"DEBUG: loading EventTypes.json from server...");
+            NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"EventTypes.json"];
+            [eventTypejsonData writeToFile:filePath atomically:YES];
+        }
+        else {
+            // copy file from package
+            NSLog(@"DEBUG: copying EventTypes.json from app Resources directory...");
+            NSString *jsonFile = [[NSBundle mainBundle] pathForResource:@"EventTypes" ofType:@"json"];
+            NSData *jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
+            [jsonData writeToFile:[NSString stringWithFormat:@"%@/%@", documentsDirectory, @"EventTypes.json"] atomically:YES];
+        }
+        
+        // Attempt to download data - AboutUs.html
+        NSData *aboutUsHtmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:ABOUT_US_URL]];
+        if (aboutUsHtmlData) {
+            NSLog(@"DEBUG: loading AboutUs.html from server...");
+            NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"AboutUs.html"];
+            [aboutUsHtmlData writeToFile:filePath atomically:YES];
+        }
+        else {
+            // copy file from package
+            NSLog(@"DEBUG: copying AboutUs.html from app Resources directory...");
+            NSString *filePath = [[NSBundle mainBundle] pathForResource:@"AboutUs" ofType:@"html"];
+            NSData *htmlData = [NSData dataWithContentsOfFile:filePath];
+            [htmlData writeToFile:[NSString stringWithFormat:@"%@/%@", documentsDirectory, @"AboutUs.html"] atomically:YES];
+        }
+        
+        // Attempt to download data - ChurchDetails.json
+        NSData *churchDetailsjsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:CHURCH_DETAILS_JSON]];
+        if (churchDetailsjsonData) {
+            NSLog(@"DEBUG: loading ChurchDetails.json from server...");
+            NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"ChurchDetails.json"];
+            [churchDetailsjsonData writeToFile:filePath atomically:YES];
+        }
+        else {
+            // copy file from package
+            NSLog(@"DEBUG: copying ChurchDetails.json from app Resources directory...");
+            NSString *jsonFile = [[NSBundle mainBundle] pathForResource:@"ChurchDetails" ofType:@"json"];
+            NSData *jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
+            [jsonData writeToFile:[NSString stringWithFormat:@"%@/%@", documentsDirectory, @"ChurchDetails.json"] atomically:YES];
+        }
+        
+        // Attempt to download data - ChurchESLCalgary.kml
+        NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:CHURCH_ESL_CALGARY_KML]];
+        if (urlData) {
+            NSLog(@"DEBUG: loading ChurchESLCalgary.kml from server...");
+            NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"ChurchESLCalgary.kml"];
+            [urlData writeToFile:filePath atomically:YES];
+        }
+        else {
+            // copy file from package
+            NSLog(@"DEBUG: copying ChurchESLCalgary.kml from app Resources directory...");
+            NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ChurchESLCalgary" ofType:@"kml"];
+            NSData *kmlData = [NSData dataWithContentsOfFile:filePath];
+            [kmlData writeToFile:[NSString stringWithFormat:@"%@/%@", documentsDirectory, @"ChurchESLCalgary.kml"] atomically:YES];
+        }
     }
-    else {
-        // copy file from package
-        NSLog(@"DEBUG: copying EventTypes.json from app Resources directory...");
-        NSString *jsonFile = [[NSBundle mainBundle] pathForResource:@"EventTypes" ofType:@"json"];
-        NSData *jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
-        [jsonData writeToFile:[NSString stringWithFormat:@"%@/%@", documentsDirectory, @"EventTypes.json"] atomically:YES];
-    }    
-    
-    // Attempt to download data - ChurchDetails.json
-//    NSData *churchDetailsjsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:CHURCH_DETAILS_JSON]];
-//    if (churchDetailsjsonData) {
-//        NSLog(@"DEBUG: loading ChurchDetails.json from server...");
-//        NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"ChurchDetails.json"];
-//        [churchDetailsjsonData writeToFile:filePath atomically:YES];
-//    }
-//    else {
-//        // copy file from package
-//        NSLog(@"DEBUG: copying ChurchDetails.json from app Resources directory...");
-//        NSString *jsonFile = [[NSBundle mainBundle] pathForResource:@"ChurchDetails" ofType:@"json"];
-//        NSData *jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
-//        [jsonData writeToFile:[NSString stringWithFormat:@"%@/%@", documentsDirectory, @"ChurchDetails.json"] atomically:YES];
-//    }
-    
-    // Attempt to download data - AboutUs.html
-    NSData *aboutUsHtmlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:ABOUT_US_URL]];
-    if (aboutUsHtmlData) {
-        NSLog(@"DEBUG: loading AboutUs.html from server...");
-        NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"AboutUs.html"];
-        [aboutUsHtmlData writeToFile:filePath atomically:YES];
-    }
-    else {
-        // copy file from package
-        NSLog(@"DEBUG: copying AboutUs.html from app Resources directory...");
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"AboutUs" ofType:@"html"];
-        NSData *htmlData = [NSData dataWithContentsOfFile:filePath];
-        [htmlData writeToFile:[NSString stringWithFormat:@"%@/%@", documentsDirectory, @"AboutUs.html"] atomically:YES];
-    }
-
-    // Attempt to download data - ChurchESLCalgary.kml
-//    NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:CHURCH_ESL_CALGARY_KML]];    
-//    if (urlData) {
-//        NSLog(@"DEBUG: loading ChurchESLCalgary.kml from server...");
-//        NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory,@"ChurchESLCalgary.kml"];
-//        [urlData writeToFile:filePath atomically:YES];
-//    }
-//    else {
-//        // copy file from package
-//        NSLog(@"DEBUG: copying ChurchESLCalgary.kml from app Resources directory...");
-//        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ChurchESLCalgary" ofType:@"kml"];
-//        NSData *kmlData = [NSData dataWithContentsOfFile:filePath];
-//        [kmlData writeToFile:[NSString stringWithFormat:@"%@/%@", documentsDirectory, @"ChurchESLCalgary.kml"] atomically:YES];
-//     }
-
-
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

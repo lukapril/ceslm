@@ -60,15 +60,19 @@
     self.navigationItem.titleView = label;
     
     NSError *jsonError;
-    NSString *jsonFile = [[NSBundle mainBundle] pathForResource:@"ChurchDetails" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
-    //    NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:CHURCH_DETAILS_JSON] options:kNilOptions error:&jsonError];
+    NSData *jsonData;
     
-    //    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    //    NSString *jsonFilePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory, @"ChurchDetails.json"];
-    //    NSData *jsonData = [NSData dataWithContentsOfFile:jsonFilePath options:kNilOptions error:&jsonError];
+    if (ENV == @"PROD") {
+        NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSString *jsonFilePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory, @"ChurchDetails.json"];
+        jsonData = [NSData dataWithContentsOfFile:jsonFilePath options:kNilOptions error:&jsonError];
+    }
+    else {
+        NSString *jsonFile = [[NSBundle mainBundle] pathForResource:@"ChurchDetails" ofType:@"json"];
+        jsonData = [NSData dataWithContentsOfFile:jsonFile options:kNilOptions error:&jsonError];
+    }
+    
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&jsonError];
-    
     NSArray *jsonArray = [json objectForKey:@"placemark"];
     self.locationList = jsonArray;
     

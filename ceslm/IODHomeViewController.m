@@ -40,16 +40,19 @@
     label.textAlignment = UITextAlignmentCenter;
     label.text = @"What's New";
     self.navigationItem.titleView = label;
-
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"AboutUs" ofType:@"html"];
-//    NSURL *url = [NSURL fileURLWithPath:path];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-   
-//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:ABOUT_US_URL]];
     
-    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *path = [NSString stringWithFormat:@"%@/%@", documentsDirectory, @"AboutUs.html"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]];
+    NSURLRequest *request;
+    
+    if (ENV == @"PROD") {
+        NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSString *path = [NSString stringWithFormat:@"%@/%@", documentsDirectory, @"AboutUs.html"];
+        request = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]];
+    }
+    else {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"AboutUs" ofType:@"html"];
+        NSURL *url = [NSURL fileURLWithPath:path];
+        request = [NSURLRequest requestWithURL:url];
+    }
     
     [webview loadRequest:request];
 }
