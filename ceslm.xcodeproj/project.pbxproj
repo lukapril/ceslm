@@ -502,14 +502,14 @@
 		52E847851581490B002D0E47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: April Luk (CCCULZ2Q49)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: April Luk (CCCULZ2Q49)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: April Luk (J2738XC6H8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ceslm/ceslm-Prefix.pch";
 				INFOPLIST_FILE = "ceslm/ceslm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "216B041E-C9D9-4D77-B912-F1154D381942";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -517,14 +517,14 @@
 		52E847861581490B002D0E47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: April Luk (CCCULZ2Q49)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: April Luk (CCCULZ2Q49)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: April Luk (J2738XC6H8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ceslm/ceslm-Prefix.pch";
 				INFOPLIST_FILE = "ceslm/ceslm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "216B041E-C9D9-4D77-B912-F1154D381942";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
