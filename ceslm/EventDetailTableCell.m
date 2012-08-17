@@ -14,6 +14,7 @@
 @synthesize eventDate = _eventDate;
 @synthesize eventLocation = _eventLocation;
 @synthesize eventContactHeader = _eventContactHeader;
+@synthesize eventContactText = _eventContactText;
 @synthesize eventContact = _eventContact;
 @synthesize eventDescription = _eventDescription;
 @synthesize setEventReminderButton;

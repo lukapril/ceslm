@@ -14,6 +14,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *eventDate;
 @property (nonatomic, strong) IBOutlet UILabel *eventLocation;
 @property (nonatomic, strong) IBOutlet UILabel *eventContactHeader;
+@property (weak, nonatomic) IBOutlet UITextView *eventContactText;
 @property (nonatomic, strong) IBOutlet UILabel *eventContact;
 @property (nonatomic, strong) IBOutlet UILabel *eventDescription;
 @property (nonatomic, strong) IBOutlet UIButton *setEventReminderButton;
