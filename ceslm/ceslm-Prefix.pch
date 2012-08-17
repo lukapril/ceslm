@@ -17,8 +17,8 @@
 
 #import "NSString+Additions.h"
 
-#define ENV @"PROD"
-//#define ENV  @"TEST"
+//#define ENV @"PROD"
+#define ENV  @"TEST"
 
 #define CONTACT_ADDRESS     @"Cooperative ESL Ministries\nc/o 84 Edgeland Road NW\nCalgary  Alberta T3A 2Y4\nCanada"
 #define FEEDBACK_EMAIL      @"questions@eslcooperative.ca"

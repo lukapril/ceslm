@@ -270,7 +270,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Eed-92-w1p">
-                                <rect key="frame" x="80" y="138" width="230" height="37"/>
+                                <rect key="frame" x="80" y="130" width="230" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal">
@@ -308,7 +308,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kmv-YA-TL7">
-                                <rect key="frame" x="80" y="193" width="230" height="37"/>
+                                <rect key="frame" x="80" y="187" width="230" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal">
@@ -573,6 +573,9 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="ulb-Pq-5I8" id="Vg5-U9-Gjr"/>
+                                            </connections>
                                         </textView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1006,12 +1009,6 @@
                 <relationship kind="outlet" name="locationContactText" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="locationDescription" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="locationName" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="IODLocationTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODLocationTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="locationTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="IODMapViewController" superclassName="UIViewController">

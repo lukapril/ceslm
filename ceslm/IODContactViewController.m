@@ -46,13 +46,31 @@
     contactLabel.text = CONTACT_ADDRESS;
     contactLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
         
-    [emailButton setTitle:FEEDBACK_EMAIL forState:UIControlStateNormal];
+//    [emailButton setTitle:FEEDBACK_EMAIL forState:UIControlStateNormal];
+    [emailButton setTitle:@"Questions/Feedback? We'd love to hear from you! Please email Us." forState:UIControlStateNormal];
     emailButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
-    [urlButton setTitle:WEBSITE_URL forState:UIControlStateNormal];
+    emailButton.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+    emailButton.titleLabel.numberOfLines = 0;
+    CGRect labelFrame = emailButton.titleLabel.frame;
+    labelFrame.size.width = 280;
+    emailButton.titleLabel.frame = labelFrame;
+    [emailButton.titleLabel sizeToFit];
+
+//    [urlButton setTitle:WEBSITE_URL forState:UIControlStateNormal];
+    [urlButton setTitle:@"Visit our website for more resources." forState:UIControlStateNormal];
     urlButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
-    [fbButton setTitle:@"CESLM@Facebook" forState:UIControlStateNormal];
+    urlButton.titleLabel.lineBreakMode = UILineBreakModeWordWrap;
+    urlButton.titleLabel.numberOfLines = 0;
+    labelFrame = urlButton.titleLabel.frame;
+    labelFrame.size.width = 280;
+    urlButton.titleLabel.frame = labelFrame;
+    [urlButton.titleLabel sizeToFit];
+
+    
+//    [fbButton setTitle:@"CESLM@Facebook" forState:UIControlStateNormal];
+    [fbButton setTitle:@"Check out our Facebook page." forState:UIControlStateNormal];
     fbButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
-    [newsLetterButton setTitle:@"Sign-up for monthly newsletter" forState:UIControlStateNormal];
+    [newsLetterButton setTitle:@"Sign-up for monthly newsletter." forState:UIControlStateNormal];
     newsLetterButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
 
 }
