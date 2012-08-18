@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
@@ -538,7 +538,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventDetailTableCell" rowHeight="279" id="ulb-Pq-5I8" customClass="EventDetailTableCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventDetailTableCell" rowHeight="279" id="ulb-Pq-5I8" customClass="EventDetailTableCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="279"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -574,7 +574,7 @@
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                             <connections>
-                                                <outlet property="delegate" destination="ulb-Pq-5I8" id="Vg5-U9-Gjr"/>
+                                                <outlet property="delegate" destination="ulb-Pq-5I8" id="MM4-bp-Lqo"/>
                                             </connections>
                                         </textView>
                                     </subviews>
@@ -949,6 +949,119 @@
         <image name="tab_info.png" width="30" height="30"/>
         <image name="tab_map.png" width="26" height="21"/>
     </resources>
+    <classes>
+        <class className="EventDetailTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventDetailTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="eventContactHeader" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="eventContactText" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="eventDate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="eventDescription" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="eventLocation" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="eventName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="registerEventButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="setEventReminderButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="IODContactViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODContactViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="emailFeedback:"/>
+                <relationship kind="action" name="goToFbUrl:"/>
+                <relationship kind="action" name="goToUrl:"/>
+                <relationship kind="action" name="registerNewsLetter:"/>
+                <relationship kind="outlet" name="contactLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="emailButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="fbButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="newsLetterButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="urlButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="IODEventReminderTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODEventReminderTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelSetReminder:"/>
+                <relationship kind="action" name="doneSetReminder:"/>
+                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="IODEventTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODEventTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="eventTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="IODEventTypeTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODEventTypeTableViewController.h"/>
+        </class>
+        <class className="IODHomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODHomeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="IODLocationDetailsScrollViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODLocationDetailsScrollViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="locationAddressString" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationContactHeader" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationContactText" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="locationDescription" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IODLocationTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODLocationTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="locationTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="IODMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODMapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="IODNewsletterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODNewsletterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="sendSubscription:"/>
+                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="subscribeButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="userTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="IODRegisterEventViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODRegisterEventViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="sendRegistration:"/>
+                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="registerButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="registerEventName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="userTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="IODUpcomingEventTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODUpcomingEventTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="registerEvent:"/>
+                <relationship kind="action" name="setEventReminder:"/>
+            </relationships>
+        </class>
+        <class className="LocationTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LocationTableCell.h"/>
+            <relationships>
+                <relationship kind="action" name="goToUrl:"/>
+                <relationship kind="outlet" name="locationAddress" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationDescription" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationWebsiteButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
