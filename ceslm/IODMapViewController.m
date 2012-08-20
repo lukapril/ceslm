@@ -9,6 +9,7 @@
 #import "IODMapViewController.h"
 #import "IODLocationTableViewController.h"
 #import "IODLocationDetailsScrollViewController.h"
+#import "CoreLocation/CoreLocation.h"
 
 @interface IODMapViewController ()
 
@@ -16,10 +17,13 @@
 
 @implementation IODMapViewController
 @synthesize map;
+@synthesize nearby_navButton;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    map.showsUserLocation = YES;
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 280, 55)];
     label.backgroundColor = [UIColor clearColor];
@@ -79,9 +83,11 @@
 	
 }
 
+
 - (void)viewDidUnload
 {
     [self setMap:nil];
+    [self setNearby_navButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -110,8 +116,9 @@
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control 
 {
     [view removeFromSuperview];
-//    [self performSegueWithIdentifier:@"showLocations" sender:self];
     [self performSegueWithIdentifier:@"showLocationDetailsScroll" sender:self];
+
+//    [self performSegueWithIdentifier:@"showLocations" sender:self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -139,5 +146,11 @@
     }
 }
 
+
+- (IBAction)navTo_nearby:(id)sender {
+    MKUserLocation *userLocation = map.userLocation;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance (userLocation.location.coordinate, NEARBY_RAIDUS, NEARBY_RAIDUS);
+    [map setRegion:region animated:YES];
+}
 
 @end

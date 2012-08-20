@@ -16,5 +16,8 @@
 }
 
 @property (strong, nonatomic) IBOutlet MKMapView *map;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nearby_navButton;
+
+- (IBAction)navTo_nearby:(id)sender;
 
 @end
