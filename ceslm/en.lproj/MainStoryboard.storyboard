@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
@@ -46,51 +46,29 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8g4-CH-Few" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="9PJ-t9-MCn" customClass="IODLocationTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="227" sectionHeaderHeight="22" sectionFooterHeight="22" id="EX4-rc-fae">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="EX4-rc-fae">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" rowHeight="227" id="nJ3-2L-bVQ" customClass="LocationTableCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="227"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" rowHeight="125" id="nJ3-2L-bVQ" customClass="LocationTableCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="226"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ALa-lJ-fjz">
-                                            <rect key="frame" x="20" y="14" width="280" height="21"/>
+                                            <rect key="frame" x="20" y="15" width="280" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aL6-js-yWX">
-                                            <rect key="frame" x="20" y="54" width="280" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Address" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aL6-js-yWX">
+                                            <rect key="frame" x="20" y="63" width="280" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" id="giu-jt-WC3">
-                                            <rect key="frame" x="20" y="120" width="280" height="35"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <state key="normal">
-                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <state key="highlighted">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="goToUrl:" destination="nJ3-2L-bVQ" eventType="touchUpInside" id="2Za-Jl-vha"/>
-                                            </connections>
-                                        </button>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="cNk-jb-9wf">
-                                            <rect key="frame" x="20" y="94" width="280" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
@@ -98,22 +76,19 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <outlet property="locationAddress" destination="cNk-jb-9wf" id="rUy-EQ-Ofn"/>
-                                    <outlet property="locationDescription" destination="aL6-js-yWX" id="IYQ-Lx-UTa"/>
-                                    <outlet property="locationName" destination="ALa-lJ-fjz" id="EIY-ee-H28"/>
-                                    <outlet property="locationWebsiteButton" destination="giu-jt-WC3" id="9Ia-Nu-BVd"/>
+                                    <outlet property="locationAddress" destination="aL6-js-yWX" id="Hi6-VG-CnF"/>
+                                    <outlet property="locationName" destination="ALa-lJ-fjz" id="cbo-9t-ZRT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="9PJ-t9-MCn" id="BC7-YZ-bFB"/>
-                            <outlet property="delegate" destination="9PJ-t9-MCn" id="YUJ-Wf-lm9"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="tyq-sA-jF2"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1524" y="360"/>
+            <point key="canvasLocation" x="1916" y="314"/>
         </scene>
         <!--Register Event View Controller - Register Event-->
         <scene sceneID="uxv-m6-q4C">
@@ -882,7 +857,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1901" y="360"/>
+            <point key="canvasLocation" x="1517" y="465"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GuT-14-hsG">
@@ -956,123 +931,6 @@
         <image name="tab_info.png" width="30" height="30"/>
         <image name="tab_map.png" width="26" height="21"/>
     </resources>
-    <classes>
-        <class className="EventDetailTableCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventDetailTableCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="eventContactHeader" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eventContactText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="eventDate" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eventDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eventLocation" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eventName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="registerEventButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="setEventReminderButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="IODContactViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODContactViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="emailFeedback:"/>
-                <relationship kind="action" name="goToFbUrl:"/>
-                <relationship kind="action" name="goToUrl:"/>
-                <relationship kind="action" name="registerNewsLetter:"/>
-                <relationship kind="outlet" name="contactLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="emailButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fbButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="newsLetterButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="urlButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="IODEventReminderTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODEventReminderTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancelSetReminder:"/>
-                <relationship kind="action" name="doneSetReminder:"/>
-                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="IODEventTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODEventTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="eventTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="IODEventTypeTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODEventTypeTableViewController.h"/>
-        </class>
-        <class className="IODHomeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODHomeViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webview" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="IODLocationDetailsScrollViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODLocationDetailsScrollViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="locationAddressString" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationContactHeader" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationContactText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="locationDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationName" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="IODLocationTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODLocationTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="locationTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="IODMapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODMapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="navTo_nearby:"/>
-                <relationship kind="action" name="showNearby:"/>
-                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="mapNearby_button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="nearby_navButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="IODNewsletterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODNewsletterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="sendSubscription:"/>
-                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="subscribeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="userTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="IODRegisterEventViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODRegisterEventViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="sendRegistration:"/>
-                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="registerButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="registerEventName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="userTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="IODUpcomingEventTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODUpcomingEventTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="registerEvent:"/>
-                <relationship kind="action" name="setEventReminder:"/>
-            </relationships>
-        </class>
-        <class className="LocationTableCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LocationTableCell.h"/>
-            <relationships>
-                <relationship kind="action" name="goToUrl:"/>
-                <relationship kind="outlet" name="locationAddress" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationWebsiteButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

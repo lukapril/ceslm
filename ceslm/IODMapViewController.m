@@ -3,7 +3,7 @@
 //  ceslm
 //
 //  Created by April Luk on 12-06-07.
-//  Copyright (c) 2012 Assn Dot Ca Inc. All rights reserved.
+//  Copyright (c) 2012 April Luk All rights reserved.
 //
 
 #import "IODMapViewController.h"
@@ -117,7 +117,6 @@
 {
     [view removeFromSuperview];
     [self performSegueWithIdentifier:@"showLocationDetailsScroll" sender:self];
-
 //    [self performSegueWithIdentifier:@"showLocations" sender:self];
 }
 

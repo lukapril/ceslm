@@ -3,7 +3,7 @@
 //  ceslm
 //
 //  Created by April Luk on 12-06-18.
-//  Copyright (c) 2012 Assn Dot Ca Inc. All rights reserved.
+//  Copyright (c) 2012 April Luk All rights reserved.
 //
 
 #import "IODUpcomingEventTableViewController.h"
@@ -313,8 +313,38 @@
     
     //case for event has multiple dates (assume dates will NOT be TBD if there are multiple dates)
     if ([[eventItem objectForKey:@"event date"] count] > 1) {
-        targetEventName = [eventItem valueForKey:@"name"];
-        [self performSegueWithIdentifier:@"registerEvent" sender:self];
+        NSString *eventDateString = [[eventItem objectForKey:@"event date"] objectAtIndex:0];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+        NSDate *eventDate = [dateFormatter dateFromString:eventDateString];
+        NSDate* currentDate = [NSDate date];
+        
+        // Use the user's current calendar and time zone
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+        [calendar setTimeZone:timeZone];
+        
+        // Selectively convert the date components (year, month, day) of the input date
+        NSDateComponents *dateComps = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:eventDate];
+        
+        // Set the time components manually
+        [dateComps setHour:0];
+        [dateComps setMinute:0];
+        [dateComps setSecond:0];
+        
+        // Convert back
+        NSDate *eventDateForComp = [calendar dateFromComponents:dateComps];
+        NSComparisonResult result = [eventDateForComp compare:currentDate];
+
+        // case for event in the past or same day as event, show alert
+        if (result <= 0) {
+            UIAlertView *alert = [UIAlertView alloc];
+            alert = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"Thank you for your interested, but we have closed registeration for this event." delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil];
+            [alert show];
+        } else {
+            targetEventName = [eventItem valueForKey:@"name"];
+            [self performSegueWithIdentifier:@"registerEvent" sender:self];
+        }
     }
     else if ([[eventItem objectForKey:@"event date"] count] == 1) {
         NSString *eventDateString = [[eventItem objectForKey:@"event date"] objectAtIndex:0];
@@ -338,7 +368,6 @@
         
         // Convert back
         NSDate *eventDateForComp = [calendar dateFromComponents:dateComps];
-        
         NSComparisonResult result = [eventDateForComp compare:currentDate];
                 
         // case for event has 1 date but TBD, show alert
