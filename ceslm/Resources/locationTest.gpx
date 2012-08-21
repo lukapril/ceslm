@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="Xcode"> 
+    <!--wpt lat="53.5333333" lon="-113.5">
+        <name>Edmonton</name>
+    </wpt>
+    <wpt lat="49.8997541" lon="-97.1374937">
+        <name>Winnipeg</name>
+    </wpt>
+    <wpt lat="49.261226" lon="123.1139268">
+        <name>Vancouver</name>
+    </wpt-->
+    <wpt lat="51.2917005" lon="-114.0143635">
+        <name>Airdire</name>
+    </wpt>
+</gpx>

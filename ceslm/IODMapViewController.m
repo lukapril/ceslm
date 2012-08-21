@@ -15,7 +15,10 @@
 
 @end
 
-@implementation IODMapViewController
+@implementation IODMapViewController {
+    dispatch_queue_t backgroundQueue;
+}
+
 @synthesize map;
 @synthesize nearby_navButton;
 
@@ -23,6 +26,7 @@
 {
     [super viewDidLoad];
     
+    backgroundQueue = dispatch_queue_create("mapData.bgqueue", NULL);
     map.showsUserLocation = YES;
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 280, 55)];
@@ -147,9 +151,36 @@
 
 
 - (IBAction)navTo_nearby:(id)sender {
-    MKUserLocation *userLocation = map.userLocation;
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance (userLocation.location.coordinate, NEARBY_RAIDUS, NEARBY_RAIDUS);
-    [map setRegion:region animated:YES];
+  
+    dispatch_async(backgroundQueue, ^(void) {
+        [SVProgressHUD show];
+        
+        MKCoordinateRegion region;
+        MKUserLocation *userLocation = map.userLocation;
+        CLLocation *currentLocation = userLocation.location;
+        CLLocation *calgaryCenter = [[CLLocation alloc] initWithLatitude:51.045113 longitude:-114.057141];
+        
+        // if user is outside of Calgary, then do not zoom in radius, zoom out to see Calgary and user location
+        if ([currentLocation distanceFromLocation:calgaryCenter] > CALGARY_CITY_RADIUS) {
+            MKCoordinateSpan span;
+            span.latitudeDelta = fabs(currentLocation.coordinate.latitude - calgaryCenter.coordinate.latitude);
+            span.longitudeDelta = fabs(currentLocation.coordinate.longitude - calgaryCenter.coordinate.longitude);
+            
+            CLLocationCoordinate2D center = CLLocationCoordinate2DMake((currentLocation.coordinate.latitude + calgaryCenter.coordinate.latitude)/2.0, (currentLocation.coordinate.longitude + calgaryCenter.coordinate.longitude)/2.0);
+            region = MKCoordinateRegionMake(center, span);
+            
+        }
+        // if user is within Calgary, then zoom in and show nearest 5k
+        else {
+            region = MKCoordinateRegionMakeWithDistance (userLocation.location.coordinate, NEARBY_RAIDUS, NEARBY_RAIDUS);
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // Pass that array to the UI, set a local property, then update your UI here since its on the main thread
+            [map setRegion:region animated:YES];
+            [SVProgressHUD dismiss];
+        });
+    });    
 }
 
 @end

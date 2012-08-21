@@ -41,7 +41,6 @@
 		529AAB7215DDA45E00BD1315 /* IODLocationDetailsScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AAB7115DDA45E00BD1315 /* IODLocationDetailsScrollViewController.m */; };
 		529AB5C0158F7C5D00D0395E /* IODNewsletterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AB5BF158F7C5D00D0395E /* IODNewsletterViewController.m */; };
 		529AB5DB158F94E800D0395E /* EventDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AB5DA158F94E800D0395E /* EventDetailTableCell.m */; };
-		52C07B1A15E35EDF00452145 /* IODLocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C07B1915E35EDF00452145 /* IODLocationTableViewController.m */; };
 		52C3B7EA159E7E0800D038A4 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3B7E9159E7E0800D038A4 /* NSString+Additions.m */; };
 		52C3B7F7159E985F00D038A4 /* tab_bullhorn.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C3B7F0159E985F00D038A4 /* tab_bullhorn.png */; };
 		52C3B7F8159E985F00D038A4 /* tab_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C3B7F1159E985F00D038A4 /* tab_calendar.png */; };
@@ -112,8 +111,6 @@
 		529AB5BF158F7C5D00D0395E /* IODNewsletterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IODNewsletterViewController.m; sourceTree = "<group>"; };
 		529AB5D9158F94E800D0395E /* EventDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailTableCell.h; sourceTree = "<group>"; };
 		529AB5DA158F94E800D0395E /* EventDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailTableCell.m; sourceTree = "<group>"; };
-		52C07B1815E35EDF00452145 /* IODLocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IODLocationTableViewController.h; path = ceslm/IODLocationTableViewController.h; sourceTree = "<group>"; };
-		52C07B1915E35EDF00452145 /* IODLocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IODLocationTableViewController.m; path = ceslm/IODLocationTableViewController.m; sourceTree = "<group>"; };
 		52C3B7E8159E7E0800D038A4 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		52C3B7E9159E7E0800D038A4 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		52C3B7F0159E985F00D038A4 /* tab_bullhorn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_bullhorn.png; sourceTree = "<group>"; };
@@ -203,8 +200,6 @@
 		52E847501581490B002D0E47 = {
 			isa = PBXGroup;
 			children = (
-				52C07B1815E35EDF00452145 /* IODLocationTableViewController.h */,
-				52C07B1915E35EDF00452145 /* IODLocationTableViewController.m */,
 				52E847651581490B002D0E47 /* ceslm */,
 				52E8475E1581490B002D0E47 /* Frameworks */,
 				52E8475C1581490B002D0E47 /* Products */,
@@ -434,7 +429,6 @@
 				52987CE515A337530097D428 /* IODHomeViewController.m in Sources */,
 				5250FE9C15DBED0D00D066A9 /* SVProgressHUD.m in Sources */,
 				529AAB7215DDA45E00BD1315 /* IODLocationDetailsScrollViewController.m in Sources */,
-				52C07B1A15E35EDF00452145 /* IODLocationTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
