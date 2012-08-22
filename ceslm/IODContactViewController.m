@@ -70,7 +70,7 @@
 //    [fbButton setTitle:@"CESLM@Facebook" forState:UIControlStateNormal];
     [fbButton setTitle:@"Check out our Facebook page." forState:UIControlStateNormal];
     fbButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
-    [newsLetterButton setTitle:@"Sign-up for monthly newsletter." forState:UIControlStateNormal];
+    [newsLetterButton setTitle:@"Sign-up for our monthly newsletter." forState:UIControlStateNormal];
     newsLetterButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16];
 
 }

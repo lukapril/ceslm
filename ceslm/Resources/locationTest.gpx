@@ -8,8 +8,11 @@
     </wpt>
     <wpt lat="49.261226" lon="123.1139268">
         <name>Vancouver</name>
-    </wpt-->
+    </wpt>
     <wpt lat="51.2917005" lon="-114.0143635">
         <name>Airdire</name>
+    </wpt-->
+    <wpt lat="50.885076" lon="-114.0467664">
+        <name>Janelle</name>
     </wpt>
 </gpx>
