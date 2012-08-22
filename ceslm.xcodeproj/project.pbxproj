@@ -20,7 +20,6 @@
 		522D76E715D4548C008D1468 /* AboutUs.html in Resources */ = {isa = PBXBuildFile; fileRef = 522D76E315D4548C008D1468 /* AboutUs.html */; };
 		522D76E915D4548C008D1468 /* ChurchESLCalgary.kml in Resources */ = {isa = PBXBuildFile; fileRef = 522D76E515D4548C008D1468 /* ChurchESLCalgary.kml */; };
 		522D76EA15D4548C008D1468 /* EventTypes.json in Resources */ = {isa = PBXBuildFile; fileRef = 522D76E615D4548C008D1468 /* EventTypes.json */; };
-		522F80B215C862B7006F1BBC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 522F80B115C862B7006F1BBC /* logo.png */; };
 		524EA57B158FB38D005F9E9E /* IODUpcomingEventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524EA57A158FB38D005F9E9E /* IODUpcomingEventTableViewController.m */; };
 		524EA57D158FC3A7005F9E9E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524EA57C158FC3A7005F9E9E /* EventKit.framework */; };
 		5250FE9115DBECB600D066A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5250FE9015DBECB600D066A9 /* QuartzCore.framework */; };
@@ -49,6 +48,10 @@
 		52C3B7FB159E985F00D038A4 /* tab_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C3B7F4159E985F00D038A4 /* tab_map.png */; };
 		52C3B7FC159E985F00D038A4 /* tab_mapMarker.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C3B7F5159E985F00D038A4 /* tab_mapMarker.png */; };
 		52C3B7FD159E985F00D038A4 /* tab_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 52C3B7F6159E985F00D038A4 /* tab_phone.png */; };
+		52CCEF4B15E454CB001A5985 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEF4915E45458001A5985 /* Default.png */; };
+		52CCEF4D15E454D0001A5985 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEF4C15E454D0001A5985 /* Default@2x.png */; };
+		52CCEF4F15E45833001A5985 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEF4E15E45833001A5985 /* icon@2x.png */; };
+		52CCEF5115E4588D001A5985 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEF5015E4588D001A5985 /* icon.png */; };
 		52DE4BF8159DEF5E00985B94 /* IODEventReminderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DE4BF7159DEF5E00985B94 /* IODEventReminderTableViewController.m */; };
 		52E81D2115DD904E004C5D4B /* ChurchDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 52E81D2015DD904E004C5D4B /* ChurchDetails.json */; };
 		52E847601581490B002D0E47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E8475F1581490B002D0E47 /* UIKit.framework */; };
@@ -79,7 +82,6 @@
 		522D76E315D4548C008D1468 /* AboutUs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AboutUs.html; sourceTree = "<group>"; };
 		522D76E515D4548C008D1468 /* ChurchESLCalgary.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ChurchESLCalgary.kml; sourceTree = "<group>"; };
 		522D76E615D4548C008D1468 /* EventTypes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EventTypes.json; sourceTree = "<group>"; };
-		522F80B115C862B7006F1BBC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		524EA579158FB38D005F9E9E /* IODUpcomingEventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IODUpcomingEventTableViewController.h; sourceTree = "<group>"; };
 		524EA57A158FB38D005F9E9E /* IODUpcomingEventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IODUpcomingEventTableViewController.m; sourceTree = "<group>"; };
 		524EA57C158FC3A7005F9E9E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
@@ -120,6 +122,10 @@
 		52C3B7F4159E985F00D038A4 /* tab_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_map.png; sourceTree = "<group>"; };
 		52C3B7F5159E985F00D038A4 /* tab_mapMarker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_mapMarker.png; sourceTree = "<group>"; };
 		52C3B7F6159E985F00D038A4 /* tab_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_phone.png; sourceTree = "<group>"; };
+		52CCEF4915E45458001A5985 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		52CCEF4C15E454D0001A5985 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		52CCEF4E15E45833001A5985 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		52CCEF5015E4588D001A5985 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		52DE4BF6159DEF5E00985B94 /* IODEventReminderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IODEventReminderTableViewController.h; sourceTree = "<group>"; };
 		52DE4BF7159DEF5E00985B94 /* IODEventReminderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IODEventReminderTableViewController.m; sourceTree = "<group>"; };
 		52E81D2015DD904E004C5D4B /* ChurchDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChurchDetails.json; sourceTree = "<group>"; };
@@ -200,6 +206,10 @@
 		52E847501581490B002D0E47 = {
 			isa = PBXGroup;
 			children = (
+				52CCEF5015E4588D001A5985 /* icon.png */,
+				52CCEF4E15E45833001A5985 /* icon@2x.png */,
+				52CCEF4C15E454D0001A5985 /* Default@2x.png */,
+				52CCEF4915E45458001A5985 /* Default.png */,
 				52E847651581490B002D0E47 /* ceslm */,
 				52E8475E1581490B002D0E47 /* Frameworks */,
 				52E8475C1581490B002D0E47 /* Products */,
@@ -296,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				5279A5F115CC3BB9001D4D3C /* tab_info.png */,
-				522F80B115C862B7006F1BBC /* logo.png */,
 				5222FA7E15B0F06D0035567B /* stitching.png */,
 				520DC94715B0CA1C00A8BFFB /* forward_arrow.png */,
 				520DC94115B0C57000A8BFFB /* calendar.png */,
@@ -391,7 +400,6 @@
 				520DC94215B0C57000A8BFFB /* calendar.png in Resources */,
 				520DC94815B0CA1C00A8BFFB /* forward_arrow.png in Resources */,
 				5222FA7F15B0F06D0035567B /* stitching.png in Resources */,
-				522F80B215C862B7006F1BBC /* logo.png in Resources */,
 				5279A5F215CC3BB9001D4D3C /* tab_info.png in Resources */,
 				522D76E715D4548C008D1468 /* AboutUs.html in Resources */,
 				522D76E915D4548C008D1468 /* ChurchESLCalgary.kml in Resources */,
@@ -401,6 +409,10 @@
 				529AAB6C15DD9DF600BD1315 /* Annual Training Events.json in Resources */,
 				529AAB6D15DD9DF600BD1315 /* Intercultural Communication Workshops.json in Resources */,
 				529AAB6E15DD9DF600BD1315 /* Upcoming Events.json in Resources */,
+				52CCEF4B15E454CB001A5985 /* Default.png in Resources */,
+				52CCEF4D15E454D0001A5985 /* Default@2x.png in Resources */,
+				52CCEF4F15E45833001A5985 /* icon@2x.png in Resources */,
+				52CCEF5115E4588D001A5985 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
