@@ -52,7 +52,6 @@
 		52CCEF4D15E454D0001A5985 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEF4C15E454D0001A5985 /* Default@2x.png */; };
 		52CF0A8F15E523790011E76C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEF5015E4588D001A5985 /* icon.png */; };
 		52CF0A9015E5237D0011E76C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEF4E15E45833001A5985 /* icon@2x.png */; };
-		52CF0A9215E5247B0011E76C /* locationTest.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 52CF0A9115E5247B0011E76C /* locationTest.gpx */; };
 		52DE4BF8159DEF5E00985B94 /* IODEventReminderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DE4BF7159DEF5E00985B94 /* IODEventReminderTableViewController.m */; };
 		52E81D2115DD904E004C5D4B /* ChurchDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 52E81D2015DD904E004C5D4B /* ChurchDetails.json */; };
 		52E847601581490B002D0E47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E8475F1581490B002D0E47 /* UIKit.framework */; };
@@ -127,7 +126,6 @@
 		52CCEF4C15E454D0001A5985 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		52CCEF4E15E45833001A5985 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		52CCEF5015E4588D001A5985 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		52CF0A9115E5247B0011E76C /* locationTest.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = locationTest.gpx; path = ceslm/Resources/locationTest.gpx; sourceTree = "<group>"; };
 		52DE4BF6159DEF5E00985B94 /* IODEventReminderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IODEventReminderTableViewController.h; sourceTree = "<group>"; };
 		52DE4BF7159DEF5E00985B94 /* IODEventReminderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IODEventReminderTableViewController.m; sourceTree = "<group>"; };
 		52E81D2015DD904E004C5D4B /* ChurchDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChurchDetails.json; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 		52E847501581490B002D0E47 = {
 			isa = PBXGroup;
 			children = (
-				52CF0A9115E5247B0011E76C /* locationTest.gpx */,
 				52CCEF5015E4588D001A5985 /* icon.png */,
 				52CCEF4E15E45833001A5985 /* icon@2x.png */,
 				52CCEF4C15E454D0001A5985 /* Default@2x.png */,
@@ -416,7 +413,6 @@
 				52CCEF4D15E454D0001A5985 /* Default@2x.png in Resources */,
 				52CF0A8F15E523790011E76C /* icon.png in Resources */,
 				52CF0A9015E5237D0011E76C /* icon@2x.png in Resources */,
-				52CF0A9215E5247B0011E76C /* locationTest.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
