@@ -62,8 +62,8 @@
         },
         {
             "name":"Calgary Chinese Evangelical Free Church",
-            "description":"Mondays 6:00-9:00pm beginner ESL class. \nTuesdays 6:30-9:00pm advanced ESL class. \nSaturdays 9:00am-12:00pm intermediate ESL class. \nPeople of all ethnicities are very welcome.",
-            "contact":"Ralph Hertzsprung, Ccefc@telusplanet.net \n(403) 282-0288 or (403) 246-0695 (RH)",
+            "description":"Intermediate class on Mondays from 6:30 a.m. to 9:00 p.m. starting September 10th, 2012\nAdvanced class on Tuesdays from 6:30 to 9 p.m. starting on September 11th, 2012\nPeople of all ethnicities are very welcome.",
+            "contact":"Wendy, wendy5185@hotmail.com\nTeacher: Ralph Hertzsprung, rhertzsprung@shaw.ca",
             "address":"1706 - 20 Ave. NW",
             "website":"http://www.ccefc.ca/event/esl.html",
             "point":{
@@ -212,8 +212,8 @@
         },
         {
             "name":"Glenmore Temple",
-            "description":"Alpha for ESOL Sundays \nESL Conversation Mondays 7:00-8:30pm.",
-            "contact":"Margaret & Rick Blackburn, office@glenmoretemple.com \n(403) 253-1700",
+            "description":"Alpha for ESOL Sundays - 6:00-8:00 pm, \nESL Conversation Mondays 7:00-8:30 pm.",
+            "contact":"Margaret Blackburn, office@glenmoretemple.com \n(403) 253-1700",
             "address":"921 - 68 Ave. SW",
             "website":"http://alt.glenmoretemple.com/",
             "point":{
@@ -288,6 +288,16 @@
             "website":"http://www.calgarylighthouse.com",
             "point":{
                 "coordinates":"-114.076324,50.965778,0.000000"
+            }
+        },
+        {
+            "name":"Lutheran Church of the Good Shepherd",
+            "description":"Thursdays, 7:00–8:30 pm.  \nPre-school childcare and homework help is available, Sept. 20 – Oct. 25",
+            "contact":"(403) 271-0437 or \nRoswita Dressler at free.esl.in.deer.ridge@gmail.com",
+            "address":"13811 Deer Ridge Drive SE",
+            "website":"",
+            "point":{
+                "coordinates":"-114.0165599,50.9298889,0.000000"
             }
         },
         {
@@ -378,6 +388,16 @@
             "website":"http://www.sntmichael.com",
             "point":{
                 "coordinates":"-114.155548,51.049850,0.000000"
+            }
+        },
+        {
+            "name":"St. Martin's Anglican Church",
+            "description":"Free adult ESL Conversation Cafe Tuesdays starting September 25th 2012, 10-11:30 am.",
+            "contact":"Register: call 403-612-9949 or \nemail Laura, community.stmartins@yahoo.ca",
+            "address":"Strathcona Christie Aspen Community Centre, 277 Strathcona Drive SW",
+            "website":"http://www.stmartinscalgary.ca",
+            "point":{
+                "coordinates":"-114.1805135,51.0477034,0.000000"
             }
         },
         {

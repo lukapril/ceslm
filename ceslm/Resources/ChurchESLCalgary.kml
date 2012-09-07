@@ -43,7 +43,7 @@
   </Placemark>
   <Placemark>
     <name>Calgary Chinese Evangelical Free Church</name>
-    <description><![CDATA[<div dir="ltr">Mondays 6:00-9:00 pm beginner ESL class.<br>Tuesdays 6:30-9:00 pm advanced ESL class.<br>Saturdays 9:00 am - 12:00 pm intermediate ESL class.<br>People of all ethnicities are very welcome.<br>www.ccefc.ca/event/esl.html</div>]]></description>
+    <description><![CDATA[<div dir="ltr">Intermediate class on Mondays from 6:30 a.m. to 9:00 p.m. starting September 10th, 2012<br>Advanced class on Tuesdays from 6:30 to 9 p.m. starting on September 11th, 2012<br>People of all ethnicities are very welcome.<br>www.ccefc.ca/event/esl.html</div>]]></description>
     <styleUrl>#style14</styleUrl>
     <Point>
       <coordinates>-114.099823,51.070541,0.000000</coordinates>
@@ -171,7 +171,7 @@
   </Placemark>
   <Placemark>
     <name>Glenmore Temple</name>
-    <description><![CDATA[<div dir="ltr">Alpha for ESOL Sundays, ESL Conversation Mondays 7:00-8:30 pm.</div>]]></description>
+    <description><![CDATA[<div dir="ltr">Alpha for ESOL Sundays - 6:00-8:00 pm, <br>ESL Conversation Mondays 7:00-8:30 pm.</div>]]></description>
     <styleUrl>#style28</styleUrl>
     <Point>
       <coordinates>-114.0830134,50.9923584,0.000000</coordinates>
@@ -231,6 +231,14 @@
     <styleUrl>#style34</styleUrl>
     <Point>
       <coordinates>-114.076324,50.965778,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Lutheran Church of the Good Shepherd</name>
+    <description><![CDATA[<div dir="ltr">Thursdays, 7:00–8:30 pm. <br>Pre-school childcare and homework help is available, Sept. 20 – Oct. 25</div>]]></description>
+    <styleUrl>#style34</styleUrl>
+    <Point>
+      <coordinates>-114.0165599,50.9298889,0.000000</coordinates>
     </Point>
   </Placemark>
   <Placemark>
@@ -327,6 +335,14 @@
     <styleUrl>#style36</styleUrl>
     <Point>
       <coordinates>-114.140182,51.096123,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>St. Martins Anglican Church</name>
+    <description><![CDATA[<div dir="ltr">Free adult ESL Conversation Cafe Tuesdays starting September 25th 2012, 10-11:30 am.<br>http://www.stmartinscalgary.ca</div>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-114.1805135,51.0477034,0.000000</coordinates>
     </Point>
   </Placemark>
   <Placemark>
