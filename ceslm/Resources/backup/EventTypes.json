@@ -1,0 +1,16 @@
+{
+	"EventTypes":[
+		{
+			"name":"Upcoming Events",
+			"description":"View and register upcoming events, add event to your calender."
+		},
+		{
+			"name":"Annual Training Events",
+			"description":"Training events for church ESL program volunteers."	
+		},
+		{
+			"name":"Intercultural Communication Workshops",
+			"description":"Workshops specific to intercultural barriers and communication."	
+		}
+	]    
+}
