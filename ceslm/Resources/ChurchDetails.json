@@ -1,5 +1,15 @@
 {
     "placemark":[
+       {
+                 "name":"Abundant Life Church",
+                 "description":"ESL Bible Study. Sundays 1:00-2:00 pm. Maximum 19 students.\nComputer Class for Beginners. Sundays 2:00-3:30 pm. Maximum 15 students. Begins January 27, 2013\nConversation Class. Tuesdays 11:45 am - 1:00 pm. Maximum 14 students.\nESL Conversation/Computer Class for Beginners. Tuesdays 7:00 - 8:00 pm. Registration and classes begin February 12, 2013.\nDrop-in, one on one computer classes also available.",
+                 "contact":"Ruel Cubid, Program Director, ESL and Computer Training Program \ninfo@alc-calgary.ca \n(403) 246-1804",
+                 "address":"3325 - 49 Street SW",
+                 "website":"",
+                 "point":{
+                 "coordinates":"-114.158239,51.025325,0.000000"
+                 }
+        },
 		{
             "name":"Beddington Pentecostal Church - Agape Language Centre",
             "description":"Various ESL classes throughout the week",
@@ -298,16 +308,6 @@
             "website":"",
             "point":{
                 "coordinates":"-114.0165599,50.9298889,0.000000"
-            }
-        },
-        {
-            "name":"METRO Church",
-            "description":"Free Conversational English Classes for Beginners \nTuesdays 7:00-9:00pm",
-            "contact":"Donna Judd, metrochurch@telus.net \n(403) 273-5433",
-            "address":"3763 52nd Street SE",
-            "website":"http://www.metrochurchcalgary.org",
-            "point":{
-                "coordinates":"-113.959061,51.020924,0.000000"
             }
         },
         {

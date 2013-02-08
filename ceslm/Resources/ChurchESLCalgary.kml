@@ -242,14 +242,6 @@
     </Point>
   </Placemark>
   <Placemark>
-    <name>METRO Church</name>
-    <description><![CDATA[<div dir="ltr">Conversational ESL on Tuesdays 7:00-9:00 pm.<br>www.metrochurchcalgary.org</div>]]></description>
-    <styleUrl>#style26</styleUrl>
-    <Point>
-      <coordinates>-113.959061,51.020924,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
     <name>Richmond Hill Baptist Church</name>
     <description><![CDATA[<div dir="ltr">ESL Conversation Thursday 9:30 - 10:30 am. ESL Sunday School class Sundays 9:15 am.<br>www.richmondhillbaptist.com</div>]]></description>
     <styleUrl>#style9</styleUrl>
@@ -393,5 +385,13 @@
       <coordinates>-114.0853184,50.9385898,0.000000</coordinates>
     </Point>
   </Placemark>
+    <Placemark>
+        <name>Abundant Life Church</name>
+        <description><![CDATA[<div dir="ltr">ESL Bible Study. Sundays 1:00-2:00 pm. Maximum 19 students.</div>]]></description>
+        <styleUrl>#style8</styleUrl>
+        <Point>
+            <coordinates>-114.158239,51.025325,0.000000</coordinates>
+        </Point>
+    </Placemark>    
 </Document>
 </kml>
