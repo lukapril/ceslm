@@ -1,0 +1,20 @@
+{
+	"Upcoming Events":[
+                       {
+                       "name":"CESLM proudly presents Treacherous Heart",
+                       "description":"Treacherous Heart is a story about forgiveness, the power of love and the redeeming grace of God. It is an inspirational feature film about a young Nigerian-Canadian woman in her mid-twenties, fighting against obstacles like an arranged marriage and inter-ethnic relationships. After falling in love, she is forced into an arranged marriage and must choose between her roots and her heart. She finds out quickly enough that growing up in Canada does not exclude her from being caught in Nigerian social taboos. Treacherous Heart highlights issues of culture clash between immigrant children and their Canadian children.",
+                       "event date":["2013-03-01 19:00"],
+                       "event duration" : ["10800"],
+                       "event location":["Harvest Hills Alliance - 10099 Harvest Hills Blvd. NW, Calgary"],
+                       "contact":"Tickets: $15 each or 2 for $25 in advance ($15 each at the door). Please visit our web site to purchase ticket online. Your Paypal receipt is your ticket. Please print your receipt and bring it to the screening."
+                       },
+                       {
+                       "name":"Half-day Intercultural Communication Workshop",
+                       "description":"Do you Work with people from other cultures? \nLive near someone from another country? \nWant to welcome people from other cultures in your church or school? \nDo you want to feel comfortable and confident communicating with people from other cultures? Our INTERCULTURAL COMMUNICATION WORKSHOPS can help!",
+                       "event date":["2013-04-06 09:00","2013-05-25 09:00"],
+                       "event duration" : ["14400","14400"],
+                       "event location":["Grace Baptist Church - 2670 Radcliffee Drive SE (beside the Franklin C-Train station","Centre Street Churct ath their New Canadian Friendship Center - 5401 Temple Drive NE"],
+                       "contact":"Registration fees: $20 per person."	
+                       }	
+                       ]    
+}
