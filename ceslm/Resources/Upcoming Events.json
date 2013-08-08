@@ -1,20 +1,20 @@
 {
 	"Upcoming Events":[
                        {
-                       "name":"Spring Training 2013",
-                       "description":"Save the date! Spring Training is coming! From Isolation to Integration: Reaching Immigrant Families.",
-                       "event date":["2013-05-04 09:00"],
-                       "event duration" : ["25200"],
-                       "event location":["Bethany Chapel - 3333 Richardson Way SW"],
-                       "contact":"Early bird price: $50 (payment received prior to April 30). $60 at the door."
+                       "name":"ESL Cooperative's Annual General Meeting",
+                       "description":"You are invited to our Annual General Meeting",
+                       "event date":["2013-09-16 19:00"],
+                       "event duration" : ["3600"],
+                       "event location":["St James Anglican Church - 6351 Ranchview Drive NW"],
+                       "contact":"For more information or to RSVP, please contact bev@eslcooperative.ca"
                        },
                        {
-                       "name":"Half-day Intercultural Communication Workshop",
-                       "description":"Do you Work with people from other cultures? \nLive near someone from another country? \nWant to welcome people from other cultures in your church or school? \nDo you want to feel comfortable and confident communicating with people from other cultures? Our INTERCULTURAL COMMUNICATION WORKSHOPS can help!",
-                       "event date":["2013-04-06 09:00","2013-05-25 09:00"],
-                       "event duration" : ["14400","14400"],
-                       "event location":["Grace Baptist Church - 2670 Radcliffee Drive SE (beside the Franklin C-Train station","Centre Street Churct ath their New Canadian Friendship Center - 5401 Temple Drive NE"],
-                       "contact":"Registration fees: $20 per person."	
+                       "name":"Reaching out with English - One 30-Hour Course over 3 Weekends!",
+                       "description":"The ESL Cooperative's 30-hour training will prepare you to use ESL to reach your community:\n• Reach out in love across cultural boundaries\n• Learn to plan and deliver conversation-style lessons\n• Receive a comprehensive training manual and resources",
+                       "event date":["2013-10-04 18:00","2013-10-05 08:30","2013-10-18 18:00","2013-10-19 08:30","2013-11-01 18:00","2013-11-02 08:30"],
+                       "event duration" : ["12600","28800","12600","28800","12600","28800"],
+                       "event location":["Hawkwood Baptist Church - 20 Hawkwood Drive NW","Hawkwood Baptist Church - 20 Hawkwood Drive NW","New Canadian Friendship  Center - Temple Crossing, Unit 117 - 5401 Temple Drive NE","New Canadian Friendship  Center - Temple Crossing, Unit 117 - 5401 Temple Drive NE","Centre for Newcomers - 1010, 999 36 Street NE","Centre for Newcomers - 1010, 999 36 Street NE"],
+                       "contact":"Cost: $275 per person \nEarly bird: $225 prior to Sept 23, 2013 \n\nTo register, please click the Register button above and provide us your email address or visit our website at http://www.eslcooperative.ca"	
                        }	
                        ]    
 }
