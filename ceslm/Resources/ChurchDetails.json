@@ -222,10 +222,10 @@
         },
         {
             "name":"Glenmore Temple",
-            "description":"Alpha for ESOL Sundays - 6:00-8:00 pm, \nESL Conversation Mondays 7:00-8:30 pm.",
-            "contact":"Margaret Blackburn, office@glenmoretemple.com \n(403) 253-1700",
+            "description":"ESL Conversation Tuesdays - 7:00-8:30 pm \nSeptember 10 - December 10, 2013. Resumes January 7, 2014",
+            "contact":"Margaret Blackburn, margaret.blackburn@salvationarmycalgary.org \n(403) 512-2456",
             "address":"921 - 68 Ave. SW",
-            "website":"http://alt.glenmoretemple.com/",
+            "website":"http://www.glenmoretemple.com/",
             "point":{
                 "coordinates":"-114.0830134,50.9923584,0.000000"
             }
@@ -348,16 +348,6 @@
             "website":"http://www.rovc.ca",
             "point":{
                 "coordinates":"-114.228073,51.148811,0.000000"
-            }
-        },
-        {
-            "name":"Salvation Army – Village Site",
-            "description":"Global Café, ESL conversation, Mondays",
-            "contact":"Margaret Blackburn \nmargaret.blackburn@salvationarmycalgary.org",
-            "address":"1731 – 29 St SW",
-            "website":"",
-            "point":{
-                "coordinates":"-114.1295707,51.0390914,0.000000"
             }
         },
         {

@@ -171,7 +171,7 @@
   </Placemark>
   <Placemark>
     <name>Glenmore Temple</name>
-    <description><![CDATA[<div dir="ltr">Alpha for ESOL Sundays - 6:00-8:00 pm, <br>ESL Conversation Mondays 7:00-8:30 pm.</div>]]></description>
+    <description><![CDATA[<div dir="ltr">ESL Conversation Tuesdays - 7:00-8:30 pm<br>September 10 - December 10, 2013. Resumes January 7, 2014</div>]]></description>
     <styleUrl>#style28</styleUrl>
     <Point>
       <coordinates>-114.0830134,50.9923584,0.000000</coordinates>
@@ -271,14 +271,6 @@
     <styleUrl>#style35</styleUrl>
     <Point>
       <coordinates>-114.228073,51.148811,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
-    <name>Salvation Army – Village Site</name>
-    <description><![CDATA[<div dir="ltr">Global Café, ESL conversation, Mondays</div>]]></description>
-    <styleUrl>#style23</styleUrl>
-    <Point>
-      <coordinates>-114.1295707,51.0390914,0.000000</coordinates>
     </Point>
   </Placemark>
   <Placemark>
