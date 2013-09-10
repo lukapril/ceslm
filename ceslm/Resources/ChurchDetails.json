@@ -131,16 +131,6 @@
             }
         },
         {
-            "name":"Cross Pointe Lutheran ",
-            "description":"Beginners ESL, Sundays 9–10am",
-            "contact":"Pastor Jay Holdner, pastorjay@crosspointechurch.ca \n(403) 818-7345",
-            "address":"Empire theatre 10, Shawnessy South Calgary",
-            "website":"http://www.crosspointechurch.ca",
-            "point":{
-                "coordinates":"-114.062935,50.899242,0.000000"
-            }
-        },
-        {
             "name":"Emmanuel Christian Reformed Church",
             "description":"Thursdayam. Women only. \nChildcare available. Bible Study.",
             "contact":"ecrc@telusplanet.net \n(403) 246-0795",
@@ -308,6 +298,16 @@
             "website":"",
             "point":{
                 "coordinates":"-114.0165599,50.9298889,0.000000"
+            }
+        },
+	{
+            "name":"Northside Bible Fellowship",
+            "description":"ESL Classes: Thursdays 7:00–9:00PM \nSeptember 19 – December 5, 2013 \nLevels offered: Intermediate (CLB 3-8) & Beginner (CLB 0-2) \nCost:  $25 per term",
+            "contact":"Cindy (403-387-0756) or \nJames Jedel78@gmail.com",
+            "address":"2911 Edmonton Trail NE",
+            "website":"www.northsidebible.com",
+            "point":{
+                "coordinates":"-114.055222,51.078695,0.000000"
             }
         },
         {

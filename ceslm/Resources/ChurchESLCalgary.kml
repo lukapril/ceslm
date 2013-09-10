@@ -98,14 +98,6 @@
     </Point>
   </Placemark>
   <Placemark>
-    <name>Cross Pointe Lutheran</name>
-    <description><![CDATA[<div dir="ltr">Beginners ESL, Wednesdays 5:30-6:30 pm. Meets at #100, 333 Shawville Blvd SE (in Trailblazer room - South Fish Creek Rec Assn).<br>www.crosspointechurch.ca</div>]]></description>
-    <styleUrl>#style1</styleUrl>
-    <Point>
-      <coordinates>-114.062935,50.899242,0.000000</coordinates>
-    </Point>
-  </Placemark>
-  <Placemark>
     <name>Emmanuel Christian Reformed Church</name>
     <description><![CDATA[<div dir="ltr">ESL Bible study for women, Thursday am. Childcare available.<br></div>]]></description>
     <styleUrl>#style4</styleUrl>
@@ -239,6 +231,14 @@
     <styleUrl>#style34</styleUrl>
     <Point>
       <coordinates>-114.0165599,50.9298889,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Northside Bible Fellowship</name>
+    <description><![CDATA[<div dir="ltr">ESL Classes: Thursdays 7:00–9:00PM September 19 – December 5, 2013. Levels offered: Intermediate (CLB 3-8) & Beginner (CLB 0-2)<br>www.northsidebible.com</div>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>-114.055222,51.078695,0.000000</coordinates>
     </Point>
   </Placemark>
   <Placemark>
